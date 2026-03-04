@@ -1,7 +1,6 @@
 version: "3.1"
 
 nlu:
-
 - intent: entry_eligibility
   examples: |
     - My son's SPM results average only, what [programme_level](programme_level) can he enter?
