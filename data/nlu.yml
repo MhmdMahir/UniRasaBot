@@ -1,0 +1,93 @@
+version: "3.1"
+
+nlu:
+
+- intent: entry_eligibility
+  examples: |
+    - My son's SPM results average only, what [programme_level](programme_level) can he enter?
+    - With CGPA [2.5](cgpa) can enter [degree](programme_level)?
+    - Which courses are impossible with weak results?
+    - If fail [Mathematics](subject), still can enter [engineering](course_name)?
+    - Need bridging for [diploma](programme_level)?
+    - How long is the bridging [duration](duration)?
+    - After foundation is entry guaranteed?
+    - If fail bridging what happens?
+    - Requirements different for [international](nationality_status) students?
+    - CGPA [3.0](cgpa) enough or not?
+
+- intent: course_quality
+  examples: |
+    - Is [computer science](course_name) very hard?
+    - What is the failure rate for core subjects?
+    - Many students drop out from [engineering](course_name)?
+    - Are lecturers full time or part time?
+    - Do lecturers reply emails?
+    - Are exams purposely difficult?
+    - Is this course popular or leftover course?
+    - How tough is [degree](programme_level)?
+
+- intent: career_outcomes
+  examples: |
+    - After graduate from [accounting](course_name) what job can get?
+    - Average starting salary after [degree](programme_level)?
+    - With CGPA [2.5](cgpa) can survive job market?
+    - Which companies hire [IT](course_name) graduates?
+    - Internship guaranteed or find ourselves?
+    - Hard to get job after this course?
+    - 6 months after graduate still unemployed common?
+
+- intent: financial_concerns
+  examples: |
+    - Total cost from foundation until [degree](programme_level)?
+    - Any hidden [fee_type](fee_type)?
+    - If repeat one subject how much?
+    - Extend one semester extra how much cost?
+    - Scholarships for CGPA [3.0](cgpa)?
+    - Can pay by installment?
+    - Any hidden fees like admin or exam fees?
+
+- intent: student_support_pressure
+  examples: |
+    - Is study environment stressful?
+    - Extra classes for weak students?
+    - Any counselling support?
+    - If student depressed who helps?
+    - Many students repeat subjects?
+    - Do lecturers care if student losing motivation?
+    - Academic support available or not?
+
+- intent: discipline_safety
+  examples: |
+    - Students skip class often?
+    - Attendance strict or not?
+    - Any bullying or drugs issue?
+    - Campus safe at night?
+    - Hostel noisy at night?
+    - Discipline problems common?
+
+- intent: course_flexibility
+  examples: |
+    - Can change from [diploma](programme_level) to [degree](programme_level)?
+    - Switch from [business](course_name) to [IT](course_name)?
+    - If change course need restart year 1?
+    - If transfer to another university can credit transfer?
+    - Fees transferable if change course?
+    - If cannot cope can move to other university?
+
+- intent: institution_reputation
+  examples: |
+    - Is this qualification recognized by government?
+    - Employers respect this university?
+    - Graduates face discrimination?
+    - Which course highest dropout rate?
+    - Which courses easier to pass but still useful?
+    - Alumni doing well after 5 years?
+
+- intent: parent_advice_request
+  examples: |
+    - Honestly would you recommend this course to your own child?
+    - If you were me what should my son study?
+    - Is this university just collecting fees?
+    - Any course not worth the money?
+    - For average student is this suitable?
+    - Be honest with me is this a good choice?

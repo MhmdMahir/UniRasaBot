@@ -1,0 +1,35 @@
+slots:
+  programme_level:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: programme_level
+
+  cgpa:
+    type: float
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: cgpa
+
+  subject:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: subject
+
+  course_name:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: course_name
+
+  nationality_status:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: nationality_status
