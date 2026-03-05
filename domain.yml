@@ -10,6 +10,10 @@ intents:
   - course_flexibility
   - institution_reputation
   - parent_advice_request
+  - greet
+  - goodbye
+  - affirm
+  - deny
 
 entities:
   - programme_level
@@ -64,6 +68,26 @@ slots:
         entity: fee_type
 
 responses:
+
+  utter_goodbye:
+    - text: |
+        Goodbye! If you have any more questions in the future, feel free to ask. 
+        Best of luck with your university decisions!
+
+  utter_affirm:
+    - text: |
+        I understand your concern. Let me provide you with the information I have on that topic.
+
+  utter_deny:
+    - text: |
+        I'm sorry, I don't have the information to answer that question. 
+        Could you please provide more details or ask about something else?
+
+  utter_greet:
+    - text: |
+        Hello! I'm here to help answer your questions about university courses and related concerns. 
+        Feel free to ask me anything about entry requirements, course quality, career outcomes, 
+        financial concerns, student support, discipline and safety, course flexibility, or institution reputation.
 
   utter_entry_eligibility:
     - text: |

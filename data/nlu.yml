@@ -1,6 +1,79 @@
 version: "3.1"
 
 nlu:
+
+- intent: greet
+  examples: |
+    - Hi
+    - Hello
+    - Hey
+    - Good morning
+    - Good evening
+    - Hi there
+    - Hello there
+    - Hey there
+    - Hi bot
+    - Hello bot
+    - Hey bot
+
+
+- intent: goodbye
+  examples: |
+    - Bye
+    - Goodbye
+    - See you later
+    - See you soon
+    - Take care
+    - Have a nice day
+    - Talk to you later
+    - Catch you later
+    - Farewell
+    - I have to go now
+    - I need to leave now
+    - I need to go now 
+
+- intent: affirm
+  examples: |
+    - Yes
+    - Yeah
+    - Yea
+    - Yep
+    - Sure
+    - Of course
+    - Definitely
+    - Absolutely
+    - I agree
+    - That's right
+    - Correct
+    - That's true
+    - I think so
+    - I guess so
+    - Sounds good
+    - I believe so
+    - I suppose so
+    - I feel the same
+    - I feel the same way
+    - I feel the same about that
+
+- intent: deny
+  examples: |
+    - No
+    - Nope
+    - Nah
+    - Not really
+    - I don't think so
+    - I disagree
+    - That's not right
+    - That's false
+    - I don't believe that
+    - I don't think that's true
+    - I don't feel the same way
+    - I don't feel the same about that 
+    - not at all
+    - I don't think so at all
+    - I don't feel that way at all
+
+
 - intent: entry_eligibility
   examples: |
     - My son's SPM results average only, what [programme_level](programme_level) can he enter?

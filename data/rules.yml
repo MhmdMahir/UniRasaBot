@@ -2,6 +2,26 @@ version: "3.1"
 
 rules:
 
+- rule: affirm
+  steps:
+    - intent: affirm
+    - action: utter_affirm
+
+- rule: deny
+  steps:
+    - intent: deny
+    - action: utter_deny
+
+- rule: goodbye
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+- rule: greet
+  steps:
+    - intent: greet
+    - action: utter_greet
+
 - rule: respond to entry eligibility
   steps:
     - intent: entry_eligibility
