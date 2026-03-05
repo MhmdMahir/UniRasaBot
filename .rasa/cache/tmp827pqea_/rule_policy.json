@@ -1,0 +1,32 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"course_quality\"}}]": "utter_course_quality",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"course_quality\"}}, {\"prev_action\": {\"action_name\": \"utter_course_quality\"}, \"user\": {\"intent\": \"course_quality\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"entry_eligibility\"}}]": "utter_entry_eligibility",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"entry_eligibility\"}}, {\"prev_action\": {\"action_name\": \"utter_entry_eligibility\"}, \"user\": {\"intent\": \"entry_eligibility\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"career_outcomes\"}}]": "utter_career_outcomes",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"career_outcomes\"}}, {\"prev_action\": {\"action_name\": \"utter_career_outcomes\"}, \"user\": {\"intent\": \"career_outcomes\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"parent_advice_request\"}}]": "utter_parent_advice_request",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"parent_advice_request\"}}, {\"prev_action\": {\"action_name\": \"utter_parent_advice_request\"}, \"user\": {\"intent\": \"parent_advice_request\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"course_flexibility\"}}]": "utter_course_flexibility",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"course_flexibility\"}}, {\"prev_action\": {\"action_name\": \"utter_course_flexibility\"}, \"user\": {\"intent\": \"course_flexibility\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"financial_concerns\"}}]": "utter_financial_concerns",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"financial_concerns\"}}, {\"prev_action\": {\"action_name\": \"utter_financial_concerns\"}, \"user\": {\"intent\": \"financial_concerns\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"student_support_pressure\"}}]": "utter_student_support_pressure",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"student_support_pressure\"}}, {\"prev_action\": {\"action_name\": \"utter_student_support_pressure\"}, \"user\": {\"intent\": \"student_support_pressure\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"discipline_safety\"}}]": "utter_discipline_safety",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"discipline_safety\"}}, {\"prev_action\": {\"action_name\": \"utter_discipline_safety\"}, \"user\": {\"intent\": \"discipline_safety\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"institution_reputation\"}}]": "utter_institution_reputation",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"institution_reputation\"}}, {\"prev_action\": {\"action_name\": \"utter_institution_reputation\"}, \"user\": {\"intent\": \"institution_reputation\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "predicting default action with intent session_start",
+      "predicting default action with intent back",
+      "predicting default action with intent restart"
+    ]
+  }
+}

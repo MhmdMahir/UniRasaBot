@@ -2,29 +2,47 @@ version: "3.1"
 
 stories:
 
-- story: happy path
+- story: entry eligibility enquiry
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
+    - intent: entry_eligibility
+    - action: utter_entry_eligibility
 
-- story: sad path 1
+- story: course difficulty enquiry
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
+    - intent: course_quality
+    - action: utter_course_quality
 
-- story: sad path 2
+- story: career outcome enquiry
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+    - intent: career_outcomes
+    - action: utter_career_outcomes
+
+- story: financial concern enquiry
+  steps:
+    - intent: financial_concerns
+    - action: utter_financial_concerns
+
+- story: student support enquiry
+  steps:
+    - intent: student_support_pressure
+    - action: utter_student_support_pressure
+
+- story: discipline and safety enquiry
+  steps:
+    - intent: discipline_safety
+    - action: utter_discipline_safety
+
+- story: course flexibility enquiry
+  steps:
+    - intent: course_flexibility
+    - action: utter_course_flexibility
+
+- story: institution reputation enquiry
+  steps:
+    - intent: institution_reputation
+    - action: utter_institution_reputation
+
+- story: parent advice request
+  steps:
+    - intent: parent_advice_request
+    - action: utter_parent_advice_request

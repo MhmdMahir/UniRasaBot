@@ -1,35 +1,128 @@
+version: "3.1"
+
+intents:
+  - entry_eligibility
+  - course_quality
+  - career_outcomes
+  - financial_concerns
+  - student_support_pressure
+  - discipline_safety
+  - course_flexibility
+  - institution_reputation
+  - parent_advice_request
+
+entities:
+  - programme_level
+  - cgpa
+  - subject
+  - course_name
+  - duration
+  - nationality_status
+  - fee_type
+
 slots:
   programme_level:
     type: text
-    influence_conversation: true
     mappings:
       - type: from_entity
         entity: programme_level
 
   cgpa:
     type: float
-    influence_conversation: true
     mappings:
       - type: from_entity
         entity: cgpa
 
   subject:
     type: text
-    influence_conversation: true
     mappings:
       - type: from_entity
         entity: subject
 
   course_name:
     type: text
-    influence_conversation: true
     mappings:
       - type: from_entity
         entity: course_name
 
+  duration:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: duration
+
   nationality_status:
     type: text
-    influence_conversation: true
     mappings:
       - type: from_entity
         entity: nationality_status
+
+  fee_type:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: fee_type
+
+responses:
+
+  utter_entry_eligibility:
+    - text: |
+        Entry requirements depend on the programme level and prior results. 
+        Generally, diploma and foundation programmes have lower entry requirements, 
+        while degree programmes require stronger academic results. 
+        Bridging programmes may be available if requirements are not met.
+
+  utter_course_quality:
+    - text: |
+        Course difficulty varies depending on the programme and student's preparation. 
+        Some programmes such as engineering or computer science may require stronger 
+        mathematics and analytical skills. Academic support and consultations with 
+        lecturers are usually available to help students succeed.
+
+  utter_career_outcomes:
+    - text: |
+        Career opportunities depend on the course and the student's performance. 
+        Many programmes include internships or industry exposure to improve employability. 
+        Graduates often enter roles related to their field of study.
+
+  utter_financial_concerns:
+    - text: |
+        Tuition fees vary by programme and duration. Additional costs may include 
+        examination fees, administrative fees, or repeating subjects if necessary. 
+        Some institutions offer scholarships, financial aid, or installment payment options.
+
+  utter_student_support_pressure:
+    - text: |
+        Universities typically provide academic support such as tutoring, extra classes, 
+        and counselling services to help students manage stress and academic pressure.
+
+  utter_discipline_safety:
+    - text: |
+        Most campuses enforce attendance policies and maintain security measures 
+        to ensure a safe learning environment. Student conduct policies are in place 
+        to address discipline or safety concerns.
+
+  utter_course_flexibility:
+    - text: |
+        In many institutions, students may request a course change or credit transfer, 
+        depending on academic policies and programme compatibility. Some changes may 
+        require additional semesters.
+
+  utter_institution_reputation:
+    - text: |
+        Recognition of a qualification depends on accreditation and regulatory approval. 
+        Employers often evaluate graduates based on skills, experience, and academic performance.
+
+  utter_parent_advice_request:
+    - text: |
+        Choosing a programme should depend on the student's interests, strengths, and career goals. 
+        It is important to review the curriculum, accreditation, and long-term opportunities 
+        before making a decision.
+
+  utter_ask_more_details:
+    - text: |
+        Could you share a bit more detail so I can give a more accurate answer?
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

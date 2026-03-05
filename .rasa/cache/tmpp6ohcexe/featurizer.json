@@ -1,0 +1,72 @@
+{
+  "type": "MaxHistoryTrackerFeaturizer",
+  "state_featurizer": {
+    "action_texts": [],
+    "entity_tag_specs": [],
+    "feature_states": {
+      "intent": {
+        "back": 0,
+        "career_outcomes": 1,
+        "course_flexibility": 2,
+        "course_quality": 3,
+        "discipline_safety": 4,
+        "entry_eligibility": 5,
+        "financial_concerns": 6,
+        "institution_reputation": 7,
+        "nlu_fallback": 8,
+        "out_of_scope": 9,
+        "parent_advice_request": 10,
+        "restart": 11,
+        "session_start": 12,
+        "student_support_pressure": 13
+      },
+      "action_name": {
+        "action_listen": 0,
+        "action_restart": 1,
+        "action_session_start": 2,
+        "action_default_fallback": 3,
+        "action_deactivate_loop": 4,
+        "action_revert_fallback_events": 5,
+        "action_default_ask_affirmation": 6,
+        "action_default_ask_rephrase": 7,
+        "action_two_stage_fallback": 8,
+        "action_unlikely_intent": 9,
+        "action_back": 10,
+        "...": 11,
+        "action_extract_slots": 12,
+        "utter_ask_more_details": 13,
+        "utter_career_outcomes": 14,
+        "utter_course_flexibility": 15,
+        "utter_course_quality": 16,
+        "utter_discipline_safety": 17,
+        "utter_entry_eligibility": 18,
+        "utter_financial_concerns": 19,
+        "utter_institution_reputation": 20,
+        "utter_parent_advice_request": 21,
+        "utter_student_support_pressure": 22
+      },
+      "entities": {
+        "cgpa": 0,
+        "course_name": 1,
+        "duration": 2,
+        "fee_type": 3,
+        "nationality_status": 4,
+        "programme_level": 5,
+        "subject": 6
+      },
+      "slots": {
+        "programme_level_0": 0,
+        "cgpa_0": 1,
+        "cgpa_1": 2,
+        "subject_0": 3,
+        "course_name_0": 4,
+        "duration_0": 5,
+        "nationality_status_0": 6,
+        "fee_type_0": 7
+      },
+      "active_loop": {}
+    }
+  },
+  "remove_duplicates": true,
+  "max_history": 5
+}
