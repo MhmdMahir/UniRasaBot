@@ -165,7 +165,7 @@ nlu:
     - Be honest with me is this a good choice?
 
   # follow this format for more intents and examples
-  # start from here
+  # start from here8
 
 - intent: ask_programme_outline
   examples: |
