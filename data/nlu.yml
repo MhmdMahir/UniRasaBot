@@ -163,3 +163,28 @@ nlu:
     - Any course not worth the money?
     - For average student is this suitable?
     - Be honest with me is this a good choice?
+
+  # follow this format for more intents and examples
+
+- intent: ask_programme_outline
+  examples: |
+    - What are the subjects for the [Bachelor of Accounting](course_name)?
+    - What modules are included in the [Diploma in Accounting](course_name)?
+    - What subjects will I study in the [Degree in Data Science](course_name)?
+    - Show me the programme outline for [Diploma in Information Technology](course_name)
+    - What are the modules for [Bachelor of Software Engineering](course_name)?
+- intent: ask_programme_duration
+  examples: |
+    - How long is the [Bachelor of Accounting](course_name)?
+    - Duration of [Diploma in Accounting](course_name)?
+    - How many years for [Degree in Data Science](course_name)?
+    - Duration of [Diploma in Information Technology](course_name)?
+    - How long is [Bachelor of Software Engineering](course_name)?
+
+- intent: ask_programme_fee
+  examples: |
+    - What is the tuition fee for [Bachelor of Accounting](course_name)?
+    - How much is the [Diploma in Accounting](course_name)?
+    - Tuition fee for [Degree in Data Science](course_name)?
+    - How much is [Diploma in Information Technology](course_name)?
+    - What is the fee for [Bachelor of Software Engineering](course_name)? 

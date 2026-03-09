@@ -37,6 +37,18 @@ slots:
       - type: from_entity
         entity: cgpa
 
+  programme_type:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: programme_type
+
+  course_name:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: course_name
+
   subject:
     type: text
     mappings:
