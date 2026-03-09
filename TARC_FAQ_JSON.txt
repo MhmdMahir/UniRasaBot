@@ -1,0 +1,217 @@
+[
+  {
+    "category": "General Information",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What are the programmes offered?",
+        "answer": "The Bachelor Degree and Diploma programmes offered can be found at https://www.tarc.edu.my/admissions/programmes/programme-offered-a-z/undergraduate-programme/. The Foundation programmes offered can be found at https://www.tarc.edu.my/admissions/programmes/programme-offered-a-z/pre-university-programme/"
+      },
+      {
+        "id": 2,
+        "question": "When are TAR UMT intakes?",
+        "answer": "Our intakes are in January, May/June, September and November. The May/June Intake is the main intake. Information on intakes, programmes offered, fees, financial aid, accommodation etc. can be found at https://dace.tarc.edu.my/programmes/intakes"
+      },
+      {
+        "id": 3,
+        "question": "How many TAR UMT campuses are there?",
+        "answer": "TAR UMT has 6 campuses; Kuala Lumpur, Penang, Perak, Johor, Pahang and Sabah."
+      },
+      {
+        "id": 4,
+        "question": "How much are the programme fees?",
+        "answer": "For more information on fees, please visit the official website."
+      },
+      {
+        "id": 5,
+        "question": "How many semesters are there in a year and how long is the semester break?",
+        "answer": "You may find the Academic Calendar at https://www.tarc.edu.my/admissions/new-student/academic-calendar/"
+      }
+    ]
+  },
+  {
+    "category": "Application Process",
+    "questions": [
+      {
+        "id": 1,
+        "question": "When and how do I apply?",
+        "answer": "Applications are now open. You are to apply online at http://bit.ly/TARUMTapp by registering as a new user (if you are a first-time applicant). You may view the video on 'Steps for Online Application'. For application to postgraduate programmes or international students' application, please visit the specific sections on the website."
+      },
+      {
+        "id": 2,
+        "question": "What are the documents needed to apply?",
+        "answer": "You are required to upload your MyKad (front and back), SPM/O Level/STPM/A Level/UEC/equivalent results and any other relevant documents (where applicable). The documents you need to upload will be specified in the online application. All documents uploaded must be clear, scanned/snapped from the original documents and in colour."
+      },
+      {
+        "id": 3,
+        "question": "I am a graduate/student from another institution of higher learning. Are there any additional documents to submit?",
+        "answer": "The additional documents to be uploaded include the Certificate of Award/completion letter/letter on your current student status, official transcripts/semester examination results, programme structure and syllabi/course outline. The documents you need to upload will be specified in the online application. All documents uploaded must be clear, scanned/snapped from the original documents and in colour."
+      },
+      {
+        "id": 4,
+        "question": "I am applying for Architecture/Interior Architecture programmes. Are there any other requirements for me to be considered for the programme?",
+        "answer": "For Architecture/Interior Architecture programmes, shortlisted candidates will be informed via email about the portfolio interview."
+      },
+      {
+        "id": 5,
+        "question": "I am applying for Graphic Design/Fashion Design/Multimedia Design programmes. Are there any other requirements for the programme?",
+        "answer": "Applicants must submit a portfolio as specified in the online application."
+      },
+      {
+        "id": 6,
+        "question": "Is there any fee to pay for the online application?",
+        "answer": "The processing fee for the online application is RM60 (non-refundable) and is waived for one application only."
+      },
+      {
+        "id": 7,
+        "question": "When is the application closing date?",
+        "answer": "Applications are on a first-come, first-served basis. You are advised to apply early before the commencement date of the Intake."
+      },
+      {
+        "id": 8,
+        "question": "Will I be informed if my application is incomplete?",
+        "answer": "Applicants will be informed via email to upload any relevant documents that are unclear before their applications can be processed."
+      },
+      {
+        "id": 9,
+        "question": "How will I know the results of my application?",
+        "answer": "You are to log on to http://bit.ly/TARUMTapp to check your application status. The University will also send you an email. Successful applicants will also be informed via SMS (Malaysian phone numbers only)."
+      },
+      {
+        "id": 10,
+        "question": "If my application is unsuccessful, can I appeal?",
+        "answer": "You may appeal by sending an email to admission@tarc.edu.my with reasons for your appeal and any supporting documents, if applicable."
+      }
+    ]
+  },
+  {
+    "category": "Entry Requirements",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What are the entry requirements for the programmes?",
+        "answer": "The general minimum entry requirements are as follows: Foundation: SPM with 5 credits / O Level with 5 Grade C / UEC with 3 Grade B or equivalent qualification. Diploma: SPM with 3 credits / O Level with 3 Grade C / UEC with 3 Grade B or equivalent qualification. Bachelor Degree: STPM with 2 principal pass / A Level with 2 Grade D / UEC with 5 Grade B or equivalent qualification. For specific programme minimum entry requirements, visit https://dace.tarc.edu.my/programmes/intakes."
+      },
+      {
+        "id": 2,
+        "question": "Can I join the Foundation programme by using my results from two SPM examination sitting?",
+        "answer": "The minimum entry requirements for the Foundation and Diploma programmes can be taken from more than one SPM or O Level examination results."
+      },
+      {
+        "id": 3,
+        "question": "I have SPM 4 credits but only a pass in English Language. I am keen in Diploma in Public Relations (DPR) which requires credit in English Language. I have taken and passed the bridging course - English Language with Grade B. Can I join DPR?",
+        "answer": "To join the DPR programme, it is compulsory to have a credit in English Language as stated in the minimum entry requirements. The bridging course - English Language cannot be taken in lieu of a credit for SPM/O Level/UEC English Language."
+      },
+      {
+        "id": 4,
+        "question": "I have UEC and am keen on the Bachelor of Science (Hons) in Nutrition programme. However, I do not have Malaysian University English Test (MUET)/IELTS/equivalent.",
+        "answer": "Applicants with a UEC qualification who are keen in joining any of the following Bachelor Degree programmes must meet the MUET/IELTS entry requirement as follows: Nutrition: minimum Band 3/Band Score 4.0; English with Drama/English with Education/English Studies: minimum Band 4/Band Score 6.0."
+      },
+      {
+        "id": 5,
+        "question": "Besides MUET/IELTS, is there any other English Proficiency test that I can do?",
+        "answer": "Yes, you can take the Cambridge Linguaskill and achieve the following minimum score to meet the entry requirements: Nutrition: minimum score of 140; English with Drama/English with Education/English Studies: minimum score of 169. More information on Cambridge Linguaskill can be obtained at https://www.tarc.edu.my/cpe/a/linguaskill/ or email cpe@tarc.edu.my."
+      },
+      {
+        "id": 6,
+        "question": "My previous programme medium of instruction was in English. I am keen to study the Bachelor of Arts (Hons) English with Drama. Do I still need to meet the MUET/IELTS/equivalent entry requirement?",
+        "answer": "Yes, even if your previous programme was conducted in English, the MUET/IELTS entry requirement is compulsory for the following Bachelor Degree programmes: English with Drama, English with Education, English Studies. If you do not have MUET/IELTS, you may take the Cambridge Linguaskill and achieve a minimum score of 169 to meet the entry requirement for the above Bachelor Degree programmes."
+      },
+      {
+        "id": 7,
+        "question": "My Foundation programme's medium of instruction was in English. I am keen to study Bachelor of Science (Hons) in Nutrition. Must I have MUET/IELTS results?",
+        "answer": "Malaysian applicants with academic qualifications from institutions using English as the full medium of instruction are exempted from the MUET entry requirement for the University Bachelor Degree programme in Nutrition."
+      },
+      {
+        "id": 8,
+        "question": "My results meet the minimum entry requirements for the programme. Will I be offered the programme that I apply for?",
+        "answer": "Your results must first meet the minimum entry requirements of the programme to be considered for admission. For certain programmes, applicants must have good academic standing in addition to meeting the minimum entry requirements (including passing the portfolio test/interview, where applicable). The offer of admission is based on academic merit, the order of programme choice and the availability of vacancies."
+      },
+      {
+        "id": 9,
+        "question": "Are TAR UMT programmes accredited by MQA?",
+        "answer": "Yes, our programmes are accredited by MQA. More information can be found at https://www.tarc.edu.my/mqa/index.jsp"
+      },
+      {
+        "id": 10,
+        "question": "I have few years of work experience and do not have formal academic education. Can I apply for admission?",
+        "answer": "Applicants with relevant work experience and an MQA APEL for Access (APEL.A) Certificate may be considered for admission on a case-by-case basis. For application for APEL, please refer to MQA website at https://www2.mqa.gov.my/APEL/. Selection for admission is at the sole discretion of the University."
+      }
+    ]
+  },
+  {
+    "category": "Scholarships & Financial Aid",
+    "questions": [
+      {
+        "id": 1,
+        "question": "I obtained good results in my examinations. Is there any merit scholarship and how do I apply?",
+        "answer": "The Merit Scholarship is awarded to outstanding Malaysian students in the form of a tuition fee waiver of up to 100%. Candidates who meet the scholarship criteria will automatically be offered the Merit Scholarship (terms & conditions apply) at the point of admission."
+      },
+      {
+        "id": 2,
+        "question": "Are there any grants, scholarships and loans available for TAR UMT students?",
+        "answer": "For information on financial aid (e.g. grants, scholarships, study loans, PTPTN etc), please visit the Financial Aid section of the website. New students may refer to the Freshmen Guide for more details. Enquiries about financial aid can also be made by emailing the Financial Aid Unit at fncaid@tarc.edu.my"
+      },
+      {
+        "id": 3,
+        "question": "How do I apply for hostel accommodation and when can I apply for it?",
+        "answer": "You must be a registered student to apply for hostel accommodation. For enquiries on hostel, you may also email the Department of Student Affairs at dsa@tarc.edu.my."
+      }
+    ]
+  },
+  {
+    "category": "Acceptance & Payment",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What should I do to accept the offer of admission?",
+        "answer": "To accept the offer of admission and register for the programme, you are to pay the fees as stated in the Payment Details advice. For guide on payment of fees, please refer to https://www.tarc.edu.my/bursary/guidelines-on-payment-of-fees/."
+      },
+      {
+        "id": 2,
+        "question": "I am not interested to accept the offer of admission. Do I still need to pay for the fees?",
+        "answer": "You are not required to pay the fees if you do not wish to accept the offer. The offer of admission will automatically lapse after the payment due date."
+      },
+      {
+        "id": 3,
+        "question": "I have been offered full offer of admission but missed the deadline for the payment of fees, can I still pay?",
+        "answer": "You must appeal for late registration and a late registration fee of RM 50 will be charged. For the KL Campus, please email admission@tarc.edu.my. If you have been offered to the Branch, please email the branch (addresses available at https://www.tarc.edu.my/contact-us/). Late registration is subject to approval and is at the sole discretion of the University."
+      },
+      {
+        "id": 4,
+        "question": "I have been offered admission but may need some financial assistance to pay my fees. What are the financial assistance available?",
+        "answer": "You may refer to the Freshmen Guide at Financial Aid for more information."
+      }
+    ]
+  },
+  {
+    "category": "After Payment",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What should I do after I have paid my fees?",
+        "answer": "You are required to log on to http://bit.ly/TARUMTapp and click on 'Information for Freshmen' on the left panel of the Application Status page for more information."
+      },
+      {
+        "id": 2,
+        "question": "How do I know my Student Registration Number, login and other information for me to access the Student Intranet?",
+        "answer": "Please log on to http://bit.ly/TARUMTapp 2-3 working days after the payment of fees for information about your Student Registration Number, Email Login, Intranet Login and E-Learning Login."
+      },
+      {
+        "id": 3,
+        "question": "Where do I check on the orientation and timetable for my programme?",
+        "answer": "Please log on to the Student Intranet at https://web.tarc.edu.my/portal/login.jsp to check the Orientation Schedule and your timetable just before the commencement of the programmes."
+      },
+      {
+        "id": 4,
+        "question": "I have been offered a full offer of admission and have paid my fees. What should I do if I wish to change to another programme?",
+        "answer": "As you have paid the fees and are a registered student, you may apply for programme transfer if you are interested in another programme. The programme transfer application deadline are as follows: Diploma and Bachelor's Degree programmes - No later than Tuesday of Week 4 (for the January and June intakes) or Friday of Week 1 (for the November intake) after the commencement of the programme. Foundation programmes - No later than Friday of Week 2 after the commencement of the programme."
+      },
+      {
+        "id": 5,
+        "question": "I have been offered admission and have a sibling who is currently studying at TAR UMT. How and when can I apply for the Sibling Discount?",
+        "answer": "Please refer to https://www.tarc.edu.my/admissions/a/sibling-discount-for-malaysians-only/ for the Eligibility Criteria and more details on TAR UMT Sibling Discount."
+      }
+    ]
+  }
+]
