@@ -1,48 +1,45 @@
 version: "3.1"
 
+
 stories:
-
-- story: entry eligibility enquiry
+- story: greet and ask about diploma programmes
   steps:
-    - intent: entry_eligibility
-    - action: utter_entry_eligibility
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_programmes_by_level
+    entities:
+    - level: diploma
+  - action: utter_ask_programmes_by_level
 
-- story: course difficulty enquiry
+- story: ask for programme courses
   steps:
-    - intent: course_quality
-    - action: utter_course_quality
+  - intent: ask_programme_courses
+    entities:
+    - programme_name: Diploma in Marketing
+  - action: action_fetch_programme_courses
 
-- story: career outcome enquiry
+- story: ask for course info
   steps:
-    - intent: career_outcomes
-    - action: utter_career_outcomes
+  - intent: ask_course_info
+    entities:
+    - course_name: Principles of Accounting
+  - action: action_fetch_course_info
 
-- story: financial concern enquiry
+- story: ask by faculty
   steps:
-    - intent: financial_concerns
-    - action: utter_financial_concerns
+  - intent: ask_faculty_programmes
+    entities:
+    - faculty: fobe
+  - action: action_fetch_faculty_programmes
 
-- story: student support enquiry
+- story: thank and goodbye
   steps:
-    - intent: student_support_pressure
-    - action: utter_student_support_pressure
+  - intent: thank
+  - action: utter_thank
+  - intent: goodbye
+  - action: utter_goodbye
 
-- story: discipline and safety enquiry
+- story: out of scope
   steps:
-    - intent: discipline_safety
-    - action: utter_discipline_safety
-
-- story: course flexibility enquiry
-  steps:
-    - intent: course_flexibility
-    - action: utter_course_flexibility
-
-- story: institution reputation enquiry
-  steps:
-    - intent: institution_reputation
-    - action: utter_institution_reputation
-
-- story: parent advice request
-  steps:
-    - intent: parent_advice_request
-    - action: utter_parent_advice_request
+  - intent: out_of_scope
+  - action: utter_out_of_scope

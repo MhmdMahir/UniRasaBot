@@ -1,36 +1,64 @@
-version: "3.1"
-
+# config.yml
 language: en
 
 pipeline:
+  # Tokenizer for English
 - name: WhitespaceTokenizer
 
-- name: RegexFeaturizer
+  # Language model from spaCy (install en_core_web_md or en_core_web_trf)
+- name: SpacyNLP
+  model: "en_core_web_md"
 
-- name: LexicalSyntacticFeaturizer
+  # Convert text to features using spaCy
+- name: SpacyFeaturizer
+  pooling: mean
 
-- name: CountVectorsFeaturizer
+  # Entity extractor for common entities like date, number, etc.
+- name: SpacyEntityExtractor
+  dimensions: ["PERSON", "ORG", "GPE", "DATE", "TIME", "MONEY", "LOC"]
 
-- name: CountVectorsFeaturizer
-  analyzer: char_wb
-  min_ngram: 3
-  max_ngram: 5
-
+  # Intent classifier and entity extractor using Transformer-based DIET
 - name: DIETClassifier
   epochs: 100
   constrain_similarities: true
+  entity_recognition: true
+  intent_classification: true
+  use_masked_language_model: true
+  transformer_size: 256
+  number_of_transformer_layers: 2
+  number_of_attention_heads: 4
+  batch_size: [64, 256]    # gradual increase
 
+  # Entity synonym mapper to map variations of same entity (e.g., "Bachelor" -> "bachelor")
 - name: EntitySynonymMapper
 
+  # Response selector for FAQs (if you plan to use it)
 - name: ResponseSelector
   epochs: 100
 
+  # Fallback classifier to handle low confidence intents
+- name: FallbackClassifier
+  threshold: 0.7
+  ambiguity_threshold: 0.1
+
 policies:
-- name: MemoizationPolicy
-
+  # Rule-based policy for handling simple, predictable interactions
 - name: RulePolicy
+  core_fallback_threshold: 0.7
+  core_fallback_action_name: "action_default_fallback"
 
+  # Transformer-based dialogue management policy
 - name: TEDPolicy
-  max_history: 5
   epochs: 100
-assistant_id: 20260305-150936-oblique-centroid
+  max_history: 5
+  batch_size: [32, 64]
+
+  # Memoization policy to remember exact conversation patterns from training stories
+- name: MemoizationPolicy
+  max_history: 5
+
+# Session configuration (optional)
+session_config:
+  session_expiration_time: 60  # minutes
+  carry_over_slots_to_new_session: true
+assistant_id: 20260309-202747-gritty-sapwood

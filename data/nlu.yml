@@ -1,191 +1,141 @@
 version: "3.1"
 
 nlu:
-
 - intent: greet
   examples: |
-    - Hi
-    - Hello
-    - Hey
-    - Good morning
-    - Good evening
-    - Hi there
-    - Hello there
-    - Hey there
-    - Hi bot
-    - Hello bot
-    - Hey bot
-
+    - hey
+    - hello
+    - hi
+    - good morning
+    - good evening
+    - hey there
 
 - intent: goodbye
   examples: |
-    - Bye
-    - Goodbye
-    - See you later
-    - See you soon
-    - Take care
-    - Have a nice day
-    - Talk to you later
-    - Catch you later
-    - Farewell
-    - I have to go now
-    - I need to leave now
-    - I need to go now 
+    - bye
+    - goodbye
+    - see you around
+    - see you later
+    - have a nice day
 
-- intent: affirm
+- intent: thank
   examples: |
-    - Yes
-    - Yeah
-    - Yea
-    - Yep
-    - Sure
-    - Of course
-    - Definitely
-    - Absolutely
-    - I agree
-    - That's right
-    - Correct
-    - That's true
-    - I think so
-    - I guess so
-    - Sounds good
-    - I believe so
-    - I suppose so
-    - I feel the same
-    - I feel the same way
-    - I feel the same about that
+    - thanks
+    - thank you
+    - thanks a lot
+    - appreciate it
 
-- intent: deny
+- intent: ask_programmes_by_level
   examples: |
-    - No
-    - Nope
-    - Nah
-    - Not really
-    - I don't think so
-    - I disagree
-    - That's not right
-    - That's false
-    - I don't believe that
-    - I don't think that's true
-    - I don't feel the same way
-    - I don't feel the same about that 
-    - not at all
-    - I don't think so at all
-    - I don't feel that way at all
+    - What [diploma](level) programmes do you offer?
+    - Tell me about your [bachelor](level) degrees
+    - List all [undergraduate](level) programmes
+    - I'm interested in [diploma](level) courses
+    - What [bachelors](level) programmes are available?
 
-
-- intent: entry_eligibility
+- intent: ask_programme_courses
   examples: |
-    - My son's SPM results average only, what [programme_level](programme_level) can he enter?
-    - With CGPA [2.5](cgpa) can enter [degree](programme_level)?
-    - Which courses are impossible with weak results?
-    - If fail [Mathematics](subject), still can enter [engineering](course_name)?
-    - Need bridging for [diploma](programme_level)?
-    - How long is the bridging [duration](duration)?
-    - After foundation is entry guaranteed?
-    - If fail bridging what happens?
-    - Requirements different for [international](nationality_status) students?
-    - CGPA [3.0](cgpa) enough or not?
+    - What courses are in the [Diploma in Marketing](programme_name)?
+    - Can you list the subjects for [Bachelor of Software Engineering](programme_name)?
+    - Tell me the modules of [Diploma in Multimedia Design](programme_name)
+    - What will I study in [Diploma in Early Childhood Special Education](programme_name)?
+    - Show me the curriculum for [Bachelor of Real Estate Management](programme_name)
+    - I want to see the outline of [Diploma in Aquaculture](programme_name)
+    - What are the core modules in [Bachelor of Quantity Surveying](programme_name)?
+    - Subjects offered in [Diploma in Manufacturing Technology](programme_name)
+    - For [Bachelor of Information Technology (Honours) in Software Systems Development](programme_name), what courses are there?
+    - Tell me about the [Diploma in Business Administration](programme_name) subjects
 
-- intent: course_quality
+- intent: ask_course_info
   examples: |
-    - Is [computer science](course_name) very hard?
-    - What is the failure rate for core subjects?
-    - Many students drop out from [engineering](course_name)?
-    - Are lecturers full time or part time?
-    - Do lecturers reply emails?
-    - Are exams purposely difficult?
-    - Is this course popular or leftover course?
-    - How tough is [degree](programme_level)?
+    - Tell me about [Principles of Accounting](course_name)
+    - What is [Financial Accounting](course_name)?
+    - Can you explain [Object-Oriented Programming](course_name)?
+    - I want to know more about [Building Construction Technology](course_name)
+    - Describe [Introduction to Psychology](course_name)
+    - What does [AI in Social Media Marketing](course_name) cover?
+    - Is [Industrial Training](course_name) compulsory?
 
-- intent: career_outcomes
+- intent: ask_faculty_programmes
   examples: |
-    - After graduate from [accounting](course_name) what job can get?
-    - Average starting salary after [degree](programme_level)?
-    - With CGPA [2.5](cgpa) can survive job market?
-    - Which companies hire [IT](course_name) graduates?
-    - Internship guaranteed or find ourselves?
-    - Hard to get job after this course?
-    - 6 months after graduate still unemployed common?
+    - What programmes are offered by the [fafb](faculty) faculty?
+    - List all courses from [fobe](faculty)
+    - Tell me about programmes in [fcci](faculty)
+    - What does [focs](faculty) offer?
+    - Show me diplomas from [foas](faculty)
+    - Bachelor degrees in [foet](faculty)
 
-- intent: financial_concerns
-  examples: |
-    - Total cost from foundation until [degree](programme_level)?
-    - Any hidden [fee_type](fee_type)?
-    - If repeat one subject how much?
-    - Extend one semester extra how much cost?
-    - Scholarships for CGPA [3.0](cgpa)?
-    - Can pay by installment?
-    - Any hidden fees like admin or exam fees?
-
-- intent: student_support_pressure
-  examples: |
-    - Is study environment stressful?
-    - Extra classes for weak students?
-    - Any counselling support?
-    - If student depressed who helps?
-    - Many students repeat subjects?
-    - Do lecturers care if student losing motivation?
-    - Academic support available or not?
-
-- intent: discipline_safety
-  examples: |
-    - Students skip class often?
-    - Attendance strict or not?
-    - Any bullying or drugs issue?
-    - Campus safe at night?
-    - Hostel noisy at night?
-    - Discipline problems common?
-
-- intent: course_flexibility
-  examples: |
-    - Can change from [diploma](programme_level) to [degree](programme_level)?
-    - Switch from [business](course_name) to [IT](course_name)?
-    - If change course need restart year 1?
-    - If transfer to another university can credit transfer?
-    - Fees transferable if change course?
-    - If cannot cope can move to other university?
-
-- intent: institution_reputation
-  examples: |
-    - Is this qualification recognized by government?
-    - Employers respect this university?
-    - Graduates face discrimination?
-    - Which course highest dropout rate?
-    - Which courses easier to pass but still useful?
-    - Alumni doing well after 5 years?
-
-- intent: parent_advice_request
-  examples: |
-    - Honestly would you recommend this course to your own child?
-    - If you were me what should my son study?
-    - Is this university just collecting fees?
-    - Any course not worth the money?
-    - For average student is this suitable?
-    - Be honest with me is this a good choice?
-
-  # follow this format for more intents and examples
-  # start from here8
-
-- intent: ask_programme_outline
-  examples: |
-    - What are the subjects for the [Bachelor of Accounting](course_name)?
-    - What modules are included in the [Diploma in Accounting](course_name)?
-    - What subjects will I study in the [Degree in Data Science](course_name)?
-    - Show me the programme outline for [Diploma in Information Technology](course_name)
-    - What are the modules for [Bachelor of Software Engineering](course_name)?
 - intent: ask_programme_duration
   examples: |
-    - How long is the [Bachelor of Accounting](course_name)?
-    - Duration of [Diploma in Accounting](course_name)?
-    - How many years for [Degree in Data Science](course_name)?
-    - Duration of [Diploma in Information Technology](course_name)?
-    - How long is [Bachelor of Software Engineering](course_name)?
+    - How long is the [Diploma in Business Administration](programme_name) programme?
+    - What is the duration of [Bachelor of Software Engineering](programme_name)?
+    - Can you tell me how many years [Diploma in Multimedia Design](programme_name) takes?
+    - I want to know the length of [Diploma in Early Childhood Special Education](programme_name)
+    - For [Bachelor of Real Estate Management](programme_name), how long is the course?
+    - How many years does it take to complete [Diploma in Aquaculture](programme_name)?
+    - What is the duration of [Bachelor of Quantity Surveying](programme_name)?
+    - Can you tell me how long [Diploma in Manufacturing Technology](programme_name) takes?
+    - I want to know the length of [Bachelor of Information Technology (Honours) in Software Systems Development](programme_name)
+    - For [Diploma in Business Administration](programme_name), how long is the course?
 
-- intent: ask_programme_fee
+- intent: ask_programme_career_opportunities
   examples: |
-    - What is the tuition fee for [Bachelor of Accounting](course_name)?
-    - How much is the [Diploma in Accounting](course_name)?
-    - Tuition fee for [Degree in Data Science](course_name)?
-    - How much is [Diploma in Information Technology](course_name)?
-    - What is the fee for [Bachelor of Software Engineering](course_name)? 
+    - What career opportunities are there for [Diploma in Business Administration](programme_name) graduates?
+    - Can you tell me about the job prospects for [Bachelor of Software Engineering](programme_name) graduates?
+    - What kind of jobs can I get with a [Diploma in Multimedia Design](programme_name)?
+    - I want to know the career paths for [Diploma in Early Childhood Special Education](programme_name) graduates
+    - For [Bachelor of Real Estate Management](programme_name), what are the employment opportunities?
+    - What careers can I pursue with a [Diploma in Aquaculture](programme_name)?
+    - Can you tell me about the job market for [Bachelor of Quantity Surveying](programme_name) graduates?
+    - What kind of roles can I get with a [Diploma in Manufacturing Technology](programme_name)?
+    - I want to know the career prospects for [Bachelor of Information Technology (Honours) in Software Systems Development](programme_name) graduates
+    - For [Diploma in Business Administration](programme_name), what are the employment opportunities?
+
+- intent: ask_programme_entry_requirements
+  examples: |
+    - What are the entry requirements for [Diploma in Business Administration](programme_name)?
+    - Can you tell me about the admission criteria for [Bachelor of Software Engineering](programme_name)?
+    - What do I need to get into [Diploma in Multimedia Design](programme_name)?
+    - I want to know the prerequisites for [Diploma in Early Childhood Special Education](programme_name)
+    - For [Bachelor of Real Estate Management](programme_name), what are the requirements?
+    - What qualifications do I need for [Diploma in Aquaculture](programme_name)?
+    - Can you tell me about the admission requirements for [Bachelor of Quantity Surveying](programme_name)?
+    - What do I need to apply for [Diploma in Manufacturing Technology](programme_name)?
+    - I want to know the prerequisites for [Bachelor of Information Technology (Honours) in Software Systems Development](programme_name)
+    - For [Diploma in Business Administration](programme_name), what are the entry requirements?
+
+- intent: ask_programme_fees
+  examples: |
+    - How much does [Diploma in Business Administration](programme_name) cost?
+    - Can you tell me the tuition fees for [Bachelor of Software Engineering](programme_name)?
+    - What are the fees for [Diploma in Multimedia Design](programme_name)?
+    - I want to know the cost of [Diploma in Early Childhood Special Education](programme_name)
+    - For [Bachelor of Real Estate Management](programme_name), how much do I need to pay?
+    - What is the fee structure for [Diploma in Aquaculture](programme_name)?
+    - Can you tell me the tuition fees for [Bachelor of Quantity Surveying](programme_name)?
+    - What are the costs for [Diploma in Manufacturing Technology](programme_name)?
+    - I want to know the fees for [Bachelor of Information Technology (Honours) in Software Systems Development](programme_name)
+    - For [Diploma in Business Administration](programme_name), how much does it cost?
+
+- intent: ask_programme_intake
+  examples: |
+    - When is the intake for [Diploma in Business Administration](programme_name)?
+    - Can you tell me the admission period for [Bachelor of Software Engineering](programme_name)?
+    - What are the application deadlines for [Diploma in Multimedia Design](programme_name)?
+    - I want to know the intake schedule for [Diploma in Early Childhood Special Education](programme_name)
+    - For [Bachelor of Real Estate Management](programme_name), when can I apply?
+    - What is the application timeline for [Diploma in Aquaculture](programme_name)?
+    - Can you tell me the admission periods for [Bachelor of Quantity Surveying](programme_name)?
+    - What are the deadlines for applying to [Diploma in Manufacturing Technology](programme_name)?
+    - I want to know the intake schedule for [Bachelor of Information Technology (Honours) in Software Systems Development](programme_name)
+    - For [Diploma in Business Administration](programme_name), when is the application deadline?
+
+- intent: ask_
+
+- intent: out_of_scope
+  examples: |
+    - What's the weather today?
+    - Tell me a joke
+    - Who is the president?
+    - I want to apply for a job
+    - Can you book a flight?
