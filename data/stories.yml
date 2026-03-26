@@ -43,3 +43,11 @@ stories:
   steps:
   - intent: out_of_scope
   - action: utter_out_of_scope
+
+
+#entry requirement and career interest, 
+#intake date, 
+#basic info for financial, MQA, 
+#subscribing newsletter, 
+#google maps for point of interest
+
