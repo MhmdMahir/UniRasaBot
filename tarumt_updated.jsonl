@@ -1,0 +1,353 @@
+
+{"category":"programme_fee","programme_level":"degree","field":"Applied Sciences","duration":"3-4 years","total_fee_rm_range":[37200,38400]}
+{"category":"programme_fee","programme_level":"degree","field":"Nutrition","duration":"3.5 years","total_fee_rm":43400}
+{"category":"programme_fee","programme_level":"degree","field":"Computing & IT","duration":"3-4 years","total_fee_rm_range":[37200,38400]}
+{"category":"programme_fee","programme_level":"degree","field":"Accounting","duration":"4 years","total_fee_rm":45100}
+{"category":"programme_fee","programme_level":"degree","field":"Business & Finance","duration":"3-4 years","total_fee_rm_range":[36400,38400]}
+{"category":"programme_fee","programme_level":"degree","field":"Engineering","duration":"4 years","total_fee_rm_range":[43000,44700]}
+{"category":"programme_fee","programme_level":"degree","field":"Built Environment","duration":"3-4 years","total_fee_rm_range":[37500,43300]}
+{"category":"programme_fee","programme_level":"degree","field":"Creative Arts & Communication","duration":"3-4 years","total_fee_rm_range":[36300,37800]}
+{"category":"programme_fee","programme_level":"degree","field":"Social Sciences & Humanities","duration":"3-4 years","total_fee_rm_range":[36300,37500]}
+
+{"type":"Bachelor Degree","programme":"Accounting"}
+{"type":"Bachelor Degree","programme":"Accounting & Finance"}
+{"type":"Bachelor Degree","programme":"Advertising"}
+{"type":"Bachelor Degree","programme":"Analytical Chemistry"}
+{"type":"Bachelor Degree","programme":"Applied Business Analytics"}
+{"type":"Bachelor Degree","programme":"Applied Physics (Instrumentation)"}
+{"type":"Bachelor Degree","programme":"Architecture"}
+{"type":"Bachelor Degree","programme":"Banking & Finance"}
+{"type":"Bachelor Degree","programme":"Business Administration"}
+{"type":"Bachelor Degree","programme":"Business Analytics"}
+{"type":"Bachelor Degree","programme":"Bioscience with Chemistry"}
+{"type":"Bachelor Degree","programme":"Broadcasting"}
+{"type":"Bachelor Degree","programme":"Commerce"}
+{"type":"Bachelor Degree","programme":"Communication Studies"}
+{"type":"Bachelor Degree","programme":"Construction Management and Economics"}
+{"type":"Bachelor Degree","programme":"Corporate Administration"}
+{"type":"Bachelor Degree","programme":"Creative Multimedia"}
+{"type":"Bachelor Degree","programme":"Data Science"}
+{"type":"Bachelor Degree","programme":"Digital Business"}
+{"type":"Bachelor Degree","programme":"Early Childhood Education"}
+{"type":"Bachelor Degree","programme":"Entrepreneurship"}
+{"type":"Bachelor Degree","programme":"Economics"}
+{"type":"Bachelor Degree","programme":"Electrical & Electronics Engineering"}
+{"type":"Bachelor Degree","programme":"Electronics Engineering Technology"}
+{"type":"Bachelor Degree","programme":"English Studies"}
+{"type":"Bachelor Degree","programme":"English with Drama"}
+{"type":"Bachelor Degree","programme":"English with Education"}
+{"type":"Bachelor Degree","programme":"Enterprise Information Systems"}
+{"type":"Bachelor Degree","programme":"Event Management"}
+{"type":"Bachelor Degree","programme":"Fashion Design"}
+{"type":"Bachelor Degree","programme":"Finance"}
+{"type":"Bachelor Degree","programme":"Finance & Investment"}
+{"type":"Bachelor Degree","programme":"Food Science"}
+{"type":"Bachelor Degree","programme":"Graphic Design"}
+{"type":"Bachelor Degree","programme":"Gastropreneurship"}
+{"type":"Bachelor Degree","programme":"Hospitality & Catering Management"}
+{"type":"Bachelor Degree","programme":"Hospitality Management"}
+{"type":"Bachelor Degree","programme":"Human Resource Management"}
+{"type":"Bachelor Degree","programme":"Information Security"}
+{"type":"Bachelor Degree","programme":"Interactive Software Technology"}
+{"type":"Bachelor Degree","programme":"Interior Architecture"}
+{"type":"Bachelor Degree","programme":"International Business"}
+{"type":"Bachelor Degree","programme":"International Business Management"}
+{"type":"Bachelor Degree","programme":"Journalism"}
+{"type":"Bachelor Degree","programme":"Logistics & Supply Chain Management"}
+{"type":"Bachelor Degree","programme":"Manufacturing & Industrial Technology"}
+{"type":"Bachelor Degree","programme":"Marketing"}
+{"type":"Bachelor Degree","programme":"Materials & Manufacturing Technology"}
+{"type":"Bachelor Degree","programme":"Mechanical Engineering"}
+{"type":"Bachelor Degree","programme":"Mechatronics Engineering"}
+{"type":"Bachelor Degree","programme":"Management Mathematics with Computing"}
+{"type":"Bachelor Degree","programme":"Media Studies"}
+{"type":"Bachelor Degree","programme":"Nutrition"}
+{"type":"Bachelor Degree","programme":"Psychology"}
+{"type":"Bachelor Degree","programme":"Public Relations"}
+{"type":"Bachelor Degree","programme":"Quantity Surveying"}
+{"type":"Bachelor Degree","programme":"Real Estate Management"}
+{"type":"Bachelor Degree","programme":"Sports & Exercise Science"}
+{"type":"Bachelor Degree","programme":"Sports Coaching and Performance Analysis"}
+{"type":"Bachelor Degree","programme":"Software Engineering"}
+{"type":"Bachelor Degree","programme":"Software Systems Development"}
+{"type":"Bachelor Degree","programme":"Tourism Management"}
+
+//career prospect
+{
+    "programme": "Accounting",
+    "careers": ["Accountant", "Auditor", "Tax Consultant", "Financial Analyst", "Forensic Accountant"]
+},
+{
+    "programme": "Accounting & Finance",
+    "careers": ["Financial Analyst", "Investment Banker", "Auditor", "Finance Manager", "Risk Analyst"]
+},
+{
+    "programme": "Advertising",
+    "careers": ["Advertising Executive", "Creative Director", "Media Planner", "Copywriter", "Brand Strategist"]
+},
+{
+    "programme": "Analytical Chemistry",
+    "careers": ["Analytical Chemist", "Laboratory Analyst", "Quality Control Scientist", "Research Scientist"]
+  },
+  {
+    "programme": "Applied Business Analytics",
+    "careers": ["Business Analyst", "Data Analyst", "Consultant", "Operations Analyst"]
+  },
+  {
+    "programme": "Applied Physics (Instrumentation)",
+    "careers": ["Instrumentation Engineer", "Research Scientist", "Technical Consultant"]
+  },
+  {
+    "programme": "Architecture",
+    "careers": ["Architect", "Urban Planner", "Interior Designer", "Project Manager"]
+  },
+  {
+    "programme": "Banking & Finance",
+    "careers": ["Banker", "Credit Analyst", "Financial Planner", "Risk Manager"]
+  },
+  {
+    "programme": "Business Administration",
+    "careers": ["Business Manager", "Operations Manager", "Entrepreneur", "Consultant"]
+  },
+  {
+    "programme": "Business Analytics",
+    "careers": ["Data Analyst", "Business Intelligence Analyst", "Consultant"]
+  },
+  {
+    "programme": "Bioscience with Chemistry",
+    "careers": ["Biochemist", "Research Scientist", "Lab Technician"]
+  },
+  {
+    "programme": "Broadcasting",
+    "careers": ["TV Producer", "Radio Host", "Broadcast Journalist"]
+  },
+  {
+    "programme": "Commerce",
+    "careers": ["Business Analyst", "Account Manager", "Entrepreneur"]
+  },
+  {
+    "programme": "Communication Studies",
+    "careers": ["Communications Specialist", "PR Officer", "Media Planner"]
+  },
+  {
+    "programme": "Construction Management and Economics",
+    "careers": ["Construction Manager", "Project Manager", "Cost Estimator"]
+  },
+  {
+    "programme": "Corporate Administration",
+    "careers": ["Corporate Secretary", "Compliance Officer", "Administrator"]
+  },
+  {
+    "programme": "Creative Multimedia",
+    "careers": ["Multimedia Designer", "Animator", "Content Creator"]
+  },
+  {
+    "programme": "Data Science",
+    "careers": ["Data Scientist", "Machine Learning Engineer", "AI Specialist"]
+  },
+  {
+    "programme": "Digital Business",
+    "careers": ["E-commerce Manager", "Digital Strategist", "Product Manager"]
+  },
+  {
+    "programme": "Early Childhood Education",
+    "careers": ["Preschool Teacher", "Childcare Center Manager", "Education Consultant"]
+  },
+  {
+    "programme": "Entrepreneurship",
+    "careers": ["Entrepreneur", "Startup Founder", "Business Consultant"]
+  },
+  {
+    "programme": "Economics",
+    "careers": ["Economist", "Policy Analyst", "Financial Analyst"]
+  },
+  {
+    "programme": "Electrical & Electronics Engineering",
+    "careers": ["Electrical Engineer", "Electronics Engineer", "Systems Engineer"]
+  },
+  {
+    "programme": "Electronics Engineering Technology",
+    "careers": ["Engineering Technologist", "Maintenance Engineer", "Technical Specialist"]
+  },
+  {
+    "programme": "English Studies",
+    "careers": ["Editor", "Writer", "Content Specialist"]
+  },
+  {
+    "programme": "English with Drama",
+    "careers": ["Actor", "Scriptwriter", "Drama Teacher"]
+  },
+  {
+    "programme": "English with Education",
+    "careers": ["Teacher", "Curriculum Developer", "Education Consultant"]
+  },
+  {
+    "programme": "Enterprise Information Systems",
+    "careers": ["Systems Analyst", "IT Consultant", "ERP Specialist"]
+  },
+  {
+    "programme": "Event Management",
+    "careers": ["Event Planner", "Event Manager", "Coordinator"]
+  },
+  {
+    "programme": "Fashion Design",
+    "careers": ["Fashion Designer", "Stylist", "Merchandiser"]
+  },
+  {
+    "programme": "Finance",
+    "careers": ["Financial Analyst", "Investment Analyst", "Portfolio Manager"]
+  },
+  {
+    "programme": "Finance & Investment",
+    "careers": ["Investment Banker", "Portfolio Manager", "Trader"]
+  },
+  {
+    "programme": "Food Science",
+    "careers": ["Food Technologist", "Quality Assurance Officer", "Product Developer"]
+  },
+  {
+    "programme": "Graphic Design",
+    "careers": ["Graphic Designer", "Art Director", "UI Designer"]
+  },
+  {
+    "programme": "Gastropreneurship",
+    "careers": ["Restaurateur", "Food Entrepreneur", "Chef"]
+  },
+  {
+    "programme": "Hospitality & Catering Management",
+    "careers": ["Hotel Manager", "Catering Manager", "Event Coordinator"]
+  },
+  {
+    "programme": "Hospitality Management",
+    "careers": ["Hotel Manager", "Resort Manager", "Guest Relations Manager"]
+  },
+  {
+    "programme": "Human Resource Management",
+    "careers": ["HR Manager", "Recruiter", "Training Specialist"]
+  },
+  {
+    "programme": "Information Security",
+    "careers": ["Cybersecurity Analyst", "Security Engineer", "Penetration Tester"]
+  },
+  {
+    "programme": "Interactive Software Technology",
+    "careers": ["Software Developer", "UI/UX Designer", "Game Developer"]
+  },
+  {
+    "programme": "Interior Architecture",
+    "careers": ["Interior Architect", "Designer", "Space Planner"]
+  },
+  {
+    "programme": "International Business",
+    "careers": ["International Trade Specialist", "Export Manager", "Consultant"]
+  },
+  {
+    "programme": "International Business Management",
+    "careers": ["Global Business Manager", "Consultant", "Operations Manager"]
+  },
+  {
+    "programme": "Journalism",
+    "careers": ["Journalist", "Reporter", "Editor"]
+  },
+  {
+    "programme": "Logistics & Supply Chain Management",
+    "careers": ["Supply Chain Manager", "Logistics Coordinator", "Procurement Manager"]
+  },
+  {
+    "programme": "Manufacturing & Industrial Technology",
+    "careers": ["Production Manager", "Industrial Technologist", "Operations Manager"]
+  },
+  {
+    "programme": "Marketing",
+    "careers": ["Marketing Executive", "Brand Manager", "Digital Marketer"]
+  },
+  {
+    "programme": "Materials & Manufacturing Technology",
+    "careers": ["Materials Engineer", "Process Engineer", "Quality Engineer"]
+  },
+  {
+    "programme": "Mechanical Engineering",
+    "careers": ["Mechanical Engineer", "Design Engineer", "Maintenance Engineer"]
+  },
+  {
+    "programme": "Mechatronics Engineering",
+    "careers": ["Mechatronics Engineer", "Automation Engineer", "Robotics Engineer"]
+  },
+  {
+    "programme": "Management Mathematics with Computing",
+    "careers": ["Data Analyst", "Actuary", "Operations Research Analyst"]
+  },
+  {
+    "programme": "Media Studies",
+    "careers": ["Media Analyst", "Content Creator", "Producer"]
+  },
+  {
+    "programme": "Nutrition",
+    "careers": ["Nutritionist", "Dietitian", "Health Consultant"]
+  },
+  {
+    "programme": "Psychology",
+    "careers": ["Psychologist", "Counsellor", "HR Specialist"]
+  },
+  {
+    "programme": "Public Relations",
+    "careers": ["PR Executive", "Communications Manager", "Media Relations Officer"]
+  },
+  {
+    "programme": "Quantity Surveying",
+    "careers": ["Quantity Surveyor", "Cost Consultant", "Project Manager"]
+  },
+  {
+    "programme": "Real Estate Management",
+    "careers": ["Property Manager", "Real Estate Agent", "Valuer"]
+  },
+  {
+    "programme": "Sports & Exercise Science",
+    "careers": ["Fitness Trainer", "Sports Scientist", "Rehabilitation Specialist"]
+  },
+  {
+    "programme": "Sports Coaching and Performance Analysis",
+    "careers": ["Coach", "Performance Analyst", "Sports Trainer"]
+  },
+  {
+    "programme": "Software Engineering",
+    "careers": ["Software Engineer", "Backend Developer", "Frontend Developer"]
+  },
+  {
+    "programme": "Software Systems Development",
+    "careers": ["Software Developer", "Systems Engineer", "Application Developer"]
+  },
+  {
+    "programme": "Tourism Management",
+    "careers": ["Tour Manager", "Travel Consultant", "Destination Planner"]
+  }
+
+
+
+//accomodation
+{"category":"accommodation","campus":"KL Main Campus","type":"on_campus_hostel","name":"On-Campus Hostel","capacity":{"total_rooms":1000,"total_students":2000,"male_rooms":400,"female_rooms":600},"room_type":"twin_sharing","allocation_policy":"first_come_first_served","rental":{"amount_rm":267.0,"per":"person_per_month","payment_basis":"semester"},"room_facilities":["single_bed_with_mattress","study_table_and_chair","cupboard","window_mosquito_netting","ceiling_fan","lights","book_case","curtains","dustbin"],"hostel_facilities":["24_hour_security","cafeterias","air_conditioned_study_rooms","wifi_in_canteen_and_study_room_only","convenience_store","stationery_shop","atm_public_bank","water_heater","hot_and_cold_water_dispensers","self_service_laundry","multi_purpose_hall","covered_walkway_to_campus"],"notes":"No WiFi in rooms; students use own data. Free WiFi available in canteen and study rooms only."}
+{"category":"accommodation","campus":"KL Main Campus","type":"off_campus","name":"Off-Campus Accommodation","options":["Teratai Residency","other_listed_properties_within_5km"],"distance_limit_km":5,"transport_access":["public_transport","university_bus"],"application_notes":"Students must arrange directly with landlord, tenant, or agent. University is not responsible for disputes or issues.","listing_info":"Property owners can advertise by submitting form and identification to the Department of Student Affairs."}
+{"category":"contact","department":"Department of Student Affairs","institution":"Tunku Abdul Rahman University of Management and Technology","campus":"Kuala Lumpur Main Campus","address":"Ground Floor, Bangunan Tan Sri Khaw Kai Boh (Block A), Jalan Genting Kelang, 53300 Kuala Lumpur, Malaysia","contacts":[{"name":"Mr Siew Yee Hoong","phone":"03-41450123 ext 3471","whatsapp":"011-10768599"},{"name":"Ms Huei Chin","phone":"03-41450123 ext 3471","whatsapp":"011-10768599"},{"name":"Ms Ana","phone":"03-41450123 ext 3752"}],"hostel_office":{"phone":["03-4105 8952","03-4105 8962"],"office_hours":"Monday to Friday, 8:30am - 5:30pm"}}
+{"category":"accommodation","topic":"on_campus_hostel","data":{"campus":"KL Main Campus","capacity":{"total_rooms":1000,"total_students":2000,"male_rooms":400,"female_rooms":600},"room_type":"twin_sharing","allocation":"first_come_first_served","rental":{"amount_rm":267,"period":"per_month","payment":"per_semester"},"room_facilities":["bed","mattress","study_table","chair","cupboard","mosquito_net","ceiling_fan","lights","book_case","curtains","dustbin"],"hostel_facilities":["24h_security","cafeteria","air_conditioned_study_room","wifi_common_areas_only","convenience_store","stationery_shop","atm","water_heater","water_dispensers","laundry","multi_purpose_hall","covered_walkway"],"notes":"No WiFi in rooms; WiFi available in study areas and canteen."}}
+{"category":"accommodation","topic":"off_campus","data":{"campus":"KL Main Campus","options":["Teratai Residency","other_properties"],"max_distance_km":5,"transport":["public_transport","university_bus"],"notes":"Students arrange directly with landlords; university not responsible for disputes."}}
+{"category":"admissions","topic":"application_process","data":{"steps":["choose_programme","submit_online_application","upload_documents","pay_processing_fee","check_application_status","receive_offer","pay_fees_to_accept"],"notes":"Application considered complete only after documents submitted and fee paid. Applicants notified via email and SMS."}}
+{"category":"admissions","topic":"required_documents","data":{"documents":["mykad","academic_results","english_test_results","spm_results","o_level_or_equivalent","portfolio_for_design_programmes","medical_report_if_applicable","transcript_and_certificates_for_transfer_students"],"notes":"Some documents can be submitted later but must be verified before admission is finalized."}}
+{"category":"admissions","topic":"entry_requirements","data":{"bachelor_degree":"A Level with minimum 2 Grade D or equivalent","diploma":"O Level/IGCSE with minimum 3 Grade C","foundation":"O Level/IGCSE with minimum 5 Grade C including English","notes":"Requirements must be from a single sitting and meeting minimum does not guarantee admission."}}
+{"category":"admissions","topic":"english_requirements","data":{"validity":"2_years","notes":"Some programmes require higher English proficiency. Exemption possible for students from English-speaking countries."}}
+{"category":"transport","topic":"bus_routes","data":{"coverage":["Wangsa Maju LRT","Tarvilla","Teratai Residency","Prima Setapak","Jalan Genting Kelang","Melati Utama","Setapak Central","PV10","PV12","PV13","PV15"],"type":"two_way_routes","notes":"Routes connect campus to nearby housing areas and LRT stations."}}
+{"category":"transport","topic":"vehicle_entry_pass","data":{"eligibility":"students","car":{"price_rm":120,"validity":"1_year","allocation":"balloting"},"motorcycle":{"price_rm":0,"validity":"1_year"},"rules":["one_car_and_one_motorcycle_per_student","non_transferable","non_refundable"],"parent_pass":{"price_rm":20,"max_per_student":2,"purpose":"drop_off_pick_up"},"notes":"Application via intranet. Only university issues passes."}}
+{"category":"fees","topic":"dual_award_programme","data":{"partner":"International Management Institute, Switzerland","fees":{"dual_award_admin_rm":636,"annual_admin_rm":318,"study_abroad_admin_rm":1272},"study_abroad_cost":{"total_chf":31650,"includes":["tuition","accommodation","meals"]},"notes":"No local tuition fees during study abroad semester. Fees subject to change."}}
+{"category":"accommodation","topic":"on_campus_hostel","data":{"campus":"KL Main Campus","type":"on_campus","capacity":{"rooms":1000,"students":2000,"male_rooms":400,"female_rooms":600},"room_type":"twin_sharing","allocation":"first_come_first_served","rental_rm_per_month":267,"payment":"per_semester","room_facilities":["bed","mattress","study_table","chair","cupboard","mosquito_net","ceiling_fan","lights","book_case","curtains","dustbin"],"hostel_facilities":["24h_security","cafeteria","air_conditioned_study_rooms","wifi_common_areas_only","convenience_store","stationery_shop","atm","water_heater","hot_cold_water_dispensers","laundry","multi_purpose_hall","covered_walkway"]}}
+{"category":"transport","topic":"bus_routes_summary","data":{"areas_covered":["Wangsa Maju","LRT Wangsa Maju","Teratai Residency","Prima Setapak","Jalan Genting Kelang","Melati Utama","Setapak Central","PV10","PV12","PV13","PV15"],"note":"Routes connect campus with nearby housing and transport hubs."}}
+{"category":"transport","topic":"vehicle_entry_pass","data":{"eligibility":"students","car_pass":{"price_rm":120,"validity":"1_year","allocation":"balloting_required"},"motorcycle_pass":{"price_rm":0,"validity":"1_year"},"rules":["one_vehicle_per_type_per_student","non_transferable","non_refundable"],"parent_drop_off_pass":{"price_rm":20,"max_per_student":2},"note":"Applications submitted via university intranet only."}}
+{"category":"fees","topic":"dual_award_switzerland","data":{"partner":"International Management Institute Switzerland","admin_fees":{"dual_award_rm":636,"annual_rm":318,"study_abroad_rm":1272},"study_abroad_total_chf":31650,"includes":["tuition","accommodation","meals"],"note":"No local tuition fees during study abroad semester. Fees subject to change."}}
+{"category":"academics","topic":"foundation_programmes","data":{"programmes":["Foundation in Science","Foundation in Arts","Foundation in Business","Foundation in Computing","Foundation in Accounting (phased out)","Foundation in Engineering (phased out)"],"accreditation":"MQA approved","note":"Some programmes are phased out and no longer available for new intake."}}
+{"category":"academics","topic":"co_curricular_requirements","data":{"requirement":"mandatory","credits_required":2,"grading":"graded_but_not_counted_in_gpa","categories":["sports","cultural","community_service","volunteerism","communication"],"note":"Students must complete co-curricular credits to graduate."}}
+{"category":"campus_life","topic":"overview","data":{"summary":"The university provides a vibrant campus environment focused on holistic student development beyond academics, emphasizing skills, values, and career readiness."}}
+{"category":"contact","topic":"international_student_office","data":{"name":"Department of International Student Office","phone":"+603-4145 0100 / +603-4145 0123","extensions":["3108","3655","3654","3308"],"wechat":"TARUMT-DISO","whatsapp":"+6011-1075 8573","email":"intstudent@tarc.edu.my","hours":"Mon-Fri 8:30am–5:30pm","location":"KL Main Campus"}}
+{"category":"contact","topic":"student_career_development_center","data":{"phone":"+603-41450123","email":"scdc@tarc.edu.my","purpose":["internship","job_placement","career_fairs"],"location":"KL Main Campus"}}
+{"category":"training_facilities","topic":"cpe_facilities_overview","data":{"services":["seminar_rooms","lecture_theatre_110_capacity","room_rental","fernhouse_accommodation"]}}
+{"category":"accommodation","topic":"fernhouse","data":{"type":"on_campus_guesthouse","rooms":30,"features":["air_conditioning","en_suite_bathroom","coffee_tea_facilities","bottled_water","internet_access","free_parking","wifi_reception_and_tv_area","refrigerator","microwave","swimming_pool","gym","squash_courts","cafeteria"],"notes":"Suitable for business travelers and short-term stays within campus."}}
+{"category":"facilities","topic":"seminar_and_lecture_rooms","data":{"rooms":[{"name":"Seminar Room DKE Concourse","capacity":50,"layout":"cluster"},{"name":"Seminar Room Y101","capacity":48,"layout":"classroom"},{"name":"Dewan Kuliah E","capacity":110}]}}
+{"category":"contact","topic":"cpe_centre_for_continuing_and_professional_education","data":{"phone":"+603-4145 0170 / +6011-1075 8530","fax":"+603-4142 3166","email":"cpe@tarc.edu.my","address":"Jalan Genting Kelang, Setapak, 53300 Kuala Lumpur, Malaysia","hours":"Monday-Friday 8:30am–5:30pm"}}
+{"type":"newsletter_subscription","title":"Subscribe to TARUMT Newsletter","content":"Enter your email to receive updates on news, events, and announcements from TARUMT.","action":"subscribe","fields_required":["email"]}

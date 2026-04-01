@@ -1,68 +1,12 @@
 version: "3.1"
 
 rules:
-
-- rule: affirm
+- rule: greet
   steps:
-    - intent: affirm
-    - action: utter_affirm
-
-- rule: deny
-  steps:
-    - intent: deny
-    - action: utter_deny
+  - intent: greet
+  - action: utter_greet
 
 - rule: goodbye
   steps:
-    - intent: goodbye
-    - action: utter_goodbye
-
-- rule: greet
-  steps:
-    - intent: greet
-    - action: utter_greet
-
-- rule: respond to entry eligibility
-  steps:
-    - intent: entry_eligibility
-    - action: utter_entry_eligibility
-
-- rule: respond to course quality
-  steps:
-    - intent: course_quality
-    - action: utter_course_quality
-
-- rule: respond to career outcomes
-  steps:
-    - intent: career_outcomes
-    - action: utter_career_outcomes
-
-- rule: respond to financial concerns
-  steps:
-    - intent: financial_concerns
-    - action: utter_financial_concerns
-
-- rule: respond to student support
-  steps:
-    - intent: student_support_pressure
-    - action: utter_student_support_pressure
-
-- rule: respond to discipline safety
-  steps:
-    - intent: discipline_safety
-    - action: utter_discipline_safety
-
-- rule: respond to course flexibility
-  steps:
-    - intent: course_flexibility
-    - action: utter_course_flexibility
-
-- rule: respond to institution reputation
-  steps:
-    - intent: institution_reputation
-    - action: utter_institution_reputation
-
-- rule: respond to parent advice
-  steps:
-    - intent: parent_advice_request
-    - action: utter_parent_advice_request
+  - intent: goodbye
+  - action: utter_goodbye

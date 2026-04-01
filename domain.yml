@@ -1,77 +1,40 @@
 version: "3.1"
+
 intents:
   - greet
   - goodbye
-  - thank
-  - ask_programmes_by_level
-  - ask_programme_courses
-  - ask_course_info
-  - ask_faculty_programmes
-  - out_of_scope
+  - ask_course
+  - ask_programme_type
 
 entities:
-  - programme_name
-  - level
-  - faculty
-  - course_name
+  - course
+  - programme
 
 slots:
-  programme_name:
+  course:
     type: text
-    influence_conversation: false
     mappings:
-    - type: from_entity
-      entity: programme_name
-  level:
+      - type: from_entity
+        entity: course
+
+  programme:
     type: text
-    influence_conversation: false
     mappings:
-    - type: from_entity
-      entity: level
-  faculty:
-    type: text
-    influence_conversation: false
-    mappings:
-    - type: from_entity
-      entity: faculty
-  course_name:
-    type: text
-    influence_conversation: false
-    mappings:
-    - type: from_entity
-      entity: course_name
+      - type: from_entity
+        entity: programme
 
 responses:
   utter_greet:
-  - text: "Hello! How can I help you with our programmes today?"
-  - text: "Hi there! Ask me about any diploma or bachelor programme."
+    - text: "Hello! How can I help you?"
 
   utter_goodbye:
-  - text: "Goodbye! Feel free to come back if you have more questions."
-  - text: "See you! Have a great day."
+    - text: "Goodbye! Have a nice day."
 
-  utter_thank:
-  - text: "You're welcome!"
-  - text: "Happy to help!"
+  utter_ask_course:
+    - text: "Which course are you interested in?"
 
-  utter_ask_programmes_by_level:
-  - text: "We offer a wide range of diploma and bachelor programmes across various faculties. Could you specify which area you're interested in?"
-
-  utter_ask_programme_courses:
-  - text: "Here are the courses for {programme_name}: \n{programme_outline}"
-  - text: "The curriculum for {programme_name} includes: \n{programme_outline}"
-
-  utter_ask_course_info:
-  - text: "I don't have detailed information about that specific course yet, but I can tell you which programmes include it. Which programme are you interested in?"
-  - text: "Regarding {course_name}, I can't provide accurate details at the moment. However, you can contact 03-41450123 ext 3752 / 3343 for more information."
-  
-  utter_ask_faculty_programmes:
-  - text: "The {faculty} faculty offers several programmes. Could you specify a level (diploma or bachelor)?"
-
-  utter_out_of_scope:
-  - text: "I'm sorry, I can only answer questions about our academic programmes."
+  utter_course_info:
+    - text: "The {course} is available under the {programme} programme."
 
 actions:
-  - action_fetch_programme_courses
-  - action_fetch_course_info
-  - action_fetch_faculty_programmes
+  - action_get_course_info

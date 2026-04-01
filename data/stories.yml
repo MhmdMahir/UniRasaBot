@@ -1,50 +1,16 @@
 version: "3.1"
 
-
 stories:
-- story: greet and ask about diploma programmes
+- story: ask course info
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: ask_programmes_by_level
-    entities:
-    - level: diploma
-  - action: utter_ask_programmes_by_level
+  - intent: ask_course
+  - action: utter_ask_course
 
-- story: ask for programme courses
+- story: provide course info
   steps:
-  - intent: ask_programme_courses
-    entities:
-    - programme_name: Diploma in Marketing
-  - action: action_fetch_programme_courses
-
-- story: ask for course info
-  steps:
-  - intent: ask_course_info
-    entities:
-    - course_name: Principles of Accounting
-  - action: action_fetch_course_info
-
-- story: ask by faculty
-  steps:
-  - intent: ask_faculty_programmes
-    entities:
-    - faculty: fobe
-  - action: action_fetch_faculty_programmes
-
-- story: thank and goodbye
-  steps:
-  - intent: thank
-  - action: utter_thank
-  - intent: goodbye
-  - action: utter_goodbye
-
-- story: out of scope
-  steps:
-  - intent: out_of_scope
-  - action: utter_out_of_scope
-
-
+  - intent: ask_programme_type
+  - action: action_get_course_info
+  
 #entry requirement and career interest, 
 #intake date, 
 #basic info for financial, MQA, 
