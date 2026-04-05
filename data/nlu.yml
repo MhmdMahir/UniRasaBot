@@ -295,18 +295,18 @@ nlu:
 
 
 # Acceptance & Payment
-- intent: accept_offer
+- intent: ask_accept_offer
   examples: |
     - how to accept offer
     - accept admission
     - what to do after getting offer
 
-- intent: reject_offer
+- intent: ask_reject_offer
   examples: |
     - what if I don’t accept offer
     - do I need to pay if not interested
 
-- intent: late_payment
+- intent: ask_late_payment
   examples: |
     - missed payment deadline
     - can I still pay late

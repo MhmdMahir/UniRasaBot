@@ -1,40 +1,519 @@
 version: "3.1"
 
 intents:
-  - greet
-  - goodbye
-  - ask_course
-  - ask_programme_type
-
-entities:
-  - course
-  - programme
-
-slots:
-  course:
-    type: text
-    mappings:
-      - type: from_entity
-        entity: course
-
-  programme:
-    type: text
-    mappings:
-      - type: from_entity
-        entity: programme
+  - ask_programmes_offered
+  - ask_intake_dates
+  - ask_number_of_campuses
+  - ask_programme_fees
+  - ask_semester_info
+  - ask_how_to_apply
+  - ask_required_documents
+  - ask_additional_documents
+  - ask_portfolio_architecture
+  - ask_portfolio_design
+  - ask_application_fee
+  - ask_application_deadline
+  - ask_incomplete_application
+  - ask_application_result
+  - ask_appeal
+  - ask_entry_requirements
+  - ask_for_multiple_spm_sittings
+  - ask_dpr_english_requirement
+  - ask_uec_english_requirement_degree
+  - ask_alternative_english_test
+  - ask_medium_instruction_english_requirement
+  - ask_nutrition_english_exemption
+  - ask_admission_offer_chances
+  - ask_mqa_accreditation
+  - ask_apel_admission
+  - ask_merit_scholarship
+  - ask_financial_aid
+  - ask_hostel_application
+  - ask_accept_offer
+  - ask_reject_offer
+  - ask_late_payment
+  - ask_financial_help_after_offer
+  - ask_after_fee_payment
+  - ask_student_login_info
+  - ask_orientation_timetable
+  - ask_programme_transfer
+  - ask_sibling_discount
 
 responses:
-  utter_greet:
-    - text: "Hello! How can I help you?"
+# General Information
 
-  utter_goodbye:
-    - text: "Goodbye! Have a nice day."
+  utter_ask_programmes_offered:
+    - text: "You can explore Bachelor Degree and Diploma programmes here: https://www.tarc.edu.my/admissions/programmes/programme-offered-a-z/undergraduate-programme/. For Foundation programmes, visit: https://www.tarc.edu.my/admissions/programmes/programme-offered-a-z/pre-university-programme/."
+    - text: "All Undergraduate (Bachelor & Diploma) programmes are listed at: https://www.tarc.edu.my/admissions/programmes/programme-offered-a-z/undergraduate-programme/. Foundation options are available at: https://www.tarc.edu.my/admissions/programmes/programme-offered-a-z/pre-university-programme/."
+    - text: "Looking for programmes? Check out Bachelor and Diploma courses here: https://www.tarc.edu.my/admissions/programmes/programme-offered-a-z/undergraduate-programme/, and Foundation programmes here: https://www.tarc.edu.my/admissions/programmes/programme-offered-a-z/pre-university-programme/."
+    - text: "You can find a full list of undergraduate programmes (Degree & Diploma) at: https://www.tarc.edu.my/admissions/programmes/programme-offered-a-z/undergraduate-programme/. Foundation programmes are listed here: https://www.tarc.edu.my/admissions/programmes/programme-offered-a-z/pre-university-programme/."
 
-  utter_ask_course:
-    - text: "Which course are you interested in?"
+  utter_ask_intake_dates:
+    - text: "TAR UMT has intakes in January, May/June, September, and November, with May/June being the primary intake."
+    - text: "Students can enroll during January, May/June, September, or November. The main intake happens in May/June."
+    - text: "There are four intake periods: January, May/June (main intake), September, and November."
+    - text: "You can join during any of these intakes: January, May/June, September, or November. The May/June intake is the largest."
 
-  utter_course_info:
-    - text: "The {course} is available under the {programme} programme."
+  utter_ask_number_of_campuses:
+    - text: "TAR UMT operates across 6 campuses: Kuala Lumpur, Penang, Perak, Johor, Pahang, and Sabah."
+    - text: "There are six TAR UMT campuses located in Kuala Lumpur, Penang, Perak, Johor, Pahang, and Sabah."
+    - text: "TAR UMT has a total of 6 campuses, situated in Kuala Lumpur, Penang, Perak, Johor, Pahang, and Sabah."
+    - text: "You’ll find TAR UMT campuses in six locations: Kuala Lumpur, Penang, Perak, Johor, Pahang, and Sabah."
+
+  utter_ask_programme_fees:
+    - text: |
+        Foundation fees are approximately RM9,900 for Arts and Business, and RM10,200 for Science and Technology.
+        Diploma programmes (2 to 2.5 years) range from RM18,900 to RM21,800 depending on the course.
+        Degree programmes (3 to 4 years) range from RM36,300 to RM45,100 depending on the programme.
+        For more details, please visit the official TAR UMT website.
+    - text: |
+        The fee structure is as follows:
+        Foundation: RM9,900 (Arts & Business) and RM10,200 (Science & Technology).
+        Diploma (2–2.5 years): RM18,900 to RM21,800.
+        Degree (3–4 years): RM36,300 to RM45,100.
+        Visit the TAR UMT website for full fee details.
+    - text: |
+        For Foundation programmes, fees are around RM9,900 for Arts/Business and RM10,200 for Science/Technology.
+        Diploma programmes cost between RM18,900 and RM21,800, while Degree programmes range from RM36,300 to RM45,100.
+        More information is available on the official TAR UMT website.
+    - text: |
+        Estimated fees:
+        Foundation: RM9,900 – RM10,200 depending on stream.
+        Diploma (2–2.5 years): RM18,900 – RM21,800.
+        Degree (3–4 years): RM36,300 – RM45,100.
+        Kindly refer to the TAR UMT website for detailed breakdowns.
+
+  utter_ask_semester_info:
+    - text: |
+        Foundation programmes typically have semesters lasting 12 weeks with a 3-week break in between.
+        For Diploma and Degree programmes, semesters usually last 14 weeks with a 4-week break, and a short semester of 7 weeks with a 3-week break.
+        More details can be found in the Academic Calendar: https://www.tarc.edu.my/admissions/new-student/academic-calendar/.
+    - text: |
+        The semester structure varies by programme:
+        Foundation: 12-week semester with 3 weeks break.
+        Diploma & Degree: 14-week semester with 4 weeks break, plus a 7-week short semester with 3 weeks break.
+        Refer to the Academic Calendar for more details: https://www.tarc.edu.my/admissions/new-student/academic-calendar/.
+    - text: |
+        For Foundation studies, each semester is about 12 weeks long followed by a 3-week break.
+        Diploma and Degree programmes have 14-week semesters with 4-week breaks, and shorter 7-week semesters with 3-week breaks.
+        Visit the Academic Calendar for full details: https://www.tarc.edu.my/admissions/new-student/academic-calendar/.
+    - text: |
+        Semester durations are as follows:
+        Foundation: 12 weeks study + 3 weeks break.
+        Diploma & Degree: 14 weeks study + 4 weeks break, and a 7-week short semester with a 3-week break.
+        Check the Academic Calendar here: https://www.tarc.edu.my/admissions/new-student/academic-calendar/.
+
+# Application Process
+
+  utter_ask_how_to_apply:
+    - text: "Applications are open and must be submitted عبر the online portal. You can apply at http://bit.ly/TARUMTapp by registering as a new user."
+    - text: "To apply, simply register as a new user on the online application portal: http://bit.ly/TARUMTapp and complete your submission there."
+    - text: "All applications are done online. Visit http://bit.ly/TARUMTapp, create an account, and follow the steps to apply."
+    - text: "You can apply through the TAR UMT online portal by signing up as a new user at http://bit.ly/TARUMTapp."
+
+  utter_ask_required_documents:
+    - text: "Applicants must upload their MyKad (front and back), academic results such as SPM/O Level/STPM/A Level/UEC, and any relevant supporting documents. All files must be clear and in colour."
+    - text: "Required documents include your MyKad (both sides), examination results (SPM, O Level, STPM, A Level, or UEC), along with other relevant documents. Please ensure they are clear and in colour."
+    - text: "You will need to submit a copy of your MyKad (front and back), your academic results, and any supporting documents. All uploads must be clear, coloured copies."
+    - text: "Make sure to upload your MyKad (both sides), your academic certificates/results, and any additional supporting documents in clear, coloured format."
+
+  utter_ask_additional_documents:
+    - text: "Additional documents may include your certificate of completion, academic transcripts, programme structure, and course outline."
+    - text: "You may also be required to submit supporting documents such as completion certificates, transcripts, programme structures, and course outlines."
+    - text: "Other documents that might be needed include transcripts, certificates of completion, programme structure details, and course outlines."
+    - text: "Supplementary documents include your transcripts, certificate of completion, and details like programme structure and course outline."
+
+  utter_ask_portfolio_architecture:
+    - text: "For Architecture and Interior Architecture programmes, shortlisted applicants will be invited to attend a portfolio interview."
+    - text: "Applicants applying for Architecture or Interior Architecture will need to go through a portfolio interview if shortlisted."
+    - text: "Shortlisted candidates for Architecture and Interior Architecture programmes are required to attend a portfolio interview."
+    - text: "If you apply for Architecture or Interior Architecture, you may be invited for a portfolio interview upon shortlisting."
+
+  utter_ask_portfolio_design:
+    - text: "Applicants for Graphic Design, Fashion Design, and Multimedia Design programmes are required to submit a portfolio."
+    - text: "If you are applying for Graphic, Fashion, or Multimedia Design, you must prepare and submit a portfolio."
+    - text: "A portfolio submission is required for programmes such as Graphic Design, Fashion Design, and Multimedia Design."
+    - text: "For design-related programmes like Graphic, Fashion, and Multimedia Design, applicants need to submit a portfolio."
+
+  utter_ask_application_fee:
+    - text: |
+        The application processing fee is RM60 and is non-refundable. However, it is waived for your first application to TAR UMT. Any subsequent applications will require payment.
+    - text: |
+        A non-refundable fee of RM60 is charged for application processing, but first-time applicants are exempted. If you apply again later, the fee will apply.
+    - text: |
+        You only need to pay a RM60 application fee if it is not your first time applying. First-time applications to TAR UMT are free of charge.
+    - text: |
+        The RM60 processing fee is waived for first-time applicants. For any additional applications after that, the fee will be charged and is non-refundable.
+
+  utter_ask_application_deadline:
+    - text: |
+        Applications are processed on a first-come, first-served basis, so it is best to apply early. It is recommended to submit your application at least 2 months before the intake begins.
+    - text: |
+        There is no strict deadline, but applications are first-come, first-served. To avoid delays, you are advised to apply at least 2 months before your intended intake.
+    - text: |
+        Since applications are handled on a first-come, first-served basis, early submission is encouraged. Applying at least 2 months in advance is recommended.
+    - text: |
+        You should apply as early as possible because applications are processed on a first-come, first-served basis. Ideally, submit your application 2 months before intake.
+
+  utter_ask_incomplete_application:
+    - text: |
+        Yes, you will be notified via email if your application is incomplete. Please ensure all required documents are submitted and that your email address is correct to avoid delays.
+    - text: |
+        If your application is missing any information or documents, you will receive an email notification. Make sure your email is accurate and all documents are properly uploaded.
+    - text: |
+        You will be informed by email if your application is incomplete. To prevent delays, ensure all required documents are provided and your email address is correct.
+    - text: |
+        Incomplete applications will be flagged, and you will be notified via email. Be sure to submit all necessary documents and use a valid email address.
+
+  utter_ask_application_result:
+    - text: |
+        You can check your application status at http://bit.ly/TARUMTapp. Notifications will also be sent via email and SMS, including your offer letter if your application is successful.
+    - text: |
+        To track your application, log in to http://bit.ly/TARUMTapp. You will also receive updates through email and SMS regarding your status and offer letter.
+    - text: |
+        Application results can be checked online at http://bit.ly/TARUMTapp. You will also be notified via email and SMS once a decision has been made.
+    - text: |
+        Visit http://bit.ly/TARUMTapp to view your application status. Successful applicants will receive their offer letter through email and SMS notifications.
+
+  utter_ask_appeal:
+    - text: |
+        If you wish to appeal, you can email admission@tarc.edu.my with your reasons and any supporting documents. Each appeal is reviewed individually and approval is not guaranteed.
+    - text: |
+        Appeals can be submitted by emailing admission@tarc.edu.my along with justification and supporting documents. Please note that appeals are considered case-by-case.
+    - text: |
+        You may submit an appeal via email to admission@tarc.edu.my, including your reasons and relevant documents. Outcomes are not guaranteed as each case is reviewed separately.
+    - text: |
+        To appeal, send an email to admission@tarc.edu.my with your explanation and supporting documents. All appeals are evaluated individually and may not always be successful.
+
+
+# Entry Requirements
+  utter_entry_requirements:
+  - text: |
+      The general minimum entry requirements are:
+      Foundation: SPM (5 credits) / O Level (5 Grade C) / UEC (3 Grade B) or equivalent.
+      Diploma: SPM (3 credits) / O Level (3 Grade C) / UEC (3 Grade B) or equivalent.
+      Bachelor Degree: STPM (2 principal passes) / A Level (2 Grade D) / UEC (5 Grade B) or equivalent.
+      For specific programme requirements, please visit https://dace.tarc.edu.my/programmes/intakes.
+  - text: |
+      Entry requirements vary by level:
+      Foundation requires SPM with 5 credits, O Level with 5 Grade C, or UEC with 3 Grade B.
+      Diploma requires SPM with 3 credits, O Level with 3 Grade C, or UEC with 3 Grade B.
+      Degree programmes require STPM with 2 principal passes, A Level with 2 Grade D, or UEC with 5 Grade B.
+      More details are available at https://dace.tarc.edu.my/programmes/intakes.
+  - text: |
+      Minimum qualifications are as follows:
+      Foundation: 5 credits in SPM / 5 Grade C in O Level / 3 Grade B in UEC.
+      Diploma: 3 credits in SPM / 3 Grade C in O Level / 3 Grade B in UEC.
+      Bachelor Degree: 2 principal passes in STPM / 2 Grade D in A Level / 5 Grade B in UEC.
+      Kindly refer to https://dace.tarc.edu.my/programmes/intakes for programme-specific criteria.
+  - text: |
+      To qualify for admission:
+      Foundation programmes require SPM (5 credits), O Level (5 Cs), or UEC (3 Bs).
+      Diploma programmes require SPM (3 credits), O Level (3 Cs), or UEC (3 Bs).
+      Degree programmes require STPM (2 principal passes), A Level (2 Ds), or UEC (5 Bs).
+      Visit https://dace.tarc.edu.my/programmes/intakes for further details.
+
+  utter_spm_multiple_sittings:
+    - text: |
+        Yes, you can combine results from multiple SPM or O Level sittings to meet the minimum entry requirements for 
+        Foundation and Diploma programmes.
+    - text: |
+        The minimum entry requirements for Foundation and Diploma programmes can be fulfilled using results from more 
+        than one SPM or O Level examination.
+    - text: |
+        You are allowed to use results from multiple sittings of SPM or O Level to meet the entry requirements for 
+        Foundation and Diploma programmes.
+    - text: |
+        For Foundation and Diploma admissions, results from more than one SPM or O Level sitting can be considered 
+        to meet the requirements.
+
+  utter_dpr_english_requirement:
+    - text: |
+        For the DPR programme, a credit in English Language is compulsory as part of the entry requirements. The English 
+        Language bridging course cannot replace this requirement.
+    - text: |
+        Applicants to the DPR programme must have a credit in English Language. The bridging course cannot be used as a 
+        substitute for this requirement.
+    - text: |
+        A credit in English is mandatory for the DPR programme. Please note that the English Language bridging course is not 
+        accepted in place of this requirement.
+    - text: |
+        To enroll in the DPR programme, you must have a credit in English Language. The bridging course cannot be taken as an 
+        alternative to fulfill this requirement.
+        
+
+  utter_uec_english_requirement_degree:
+  - text: |
+      Applicants with UEC qualifications applying for Bachelor Degree programmes must meet MUET or IELTS requirements.
+      For Nutrition: minimum MUET Band 3 or IELTS 4.0.
+      For English with Drama, English with Education, and English Studies: minimum MUET Band 4 or IELTS 6.0.
+  - text: |
+      UEC holders are required to fulfill English proficiency requirements for degree programmes.
+      Nutrition requires MUET Band 3 or IELTS 4.0, while English-related programmes require MUET Band 4 or IELTS 6.0.
+  - text: |
+      If you hold a UEC qualification, you must meet the following English requirements:
+      Nutrition: MUET Band 3 / IELTS 4.0.
+      English with Drama, Education, or Studies: MUET Band 4 / IELTS 6.0.
+  - text: |
+      For UEC applicants entering degree programmes, MUET or IELTS is required.
+      The minimum is Band 3 / IELTS 4.0 for Nutrition, and Band 4 / IELTS 6.0 for English-related programmes.
+
+  utter_alternative_english_test:
+    - text: |
+        Yes, you may take the Cambridge Linguaskill test as an alternative.
+        Required scores are:
+        Nutrition: minimum 140;
+        English with Drama, Education, or Studies: minimum 169.
+        More info: https://www.tarc.edu.my/cpe/a/linguaskill/ or email cpe@tarc.edu.my.
+    - text: |
+        Cambridge Linguaskill is accepted as an alternative English test.
+        You need a minimum score of 140 for Nutrition, and 169 for English-related programmes.
+        Visit https://www.tarc.edu.my/cpe/a/linguaskill/ or contact cpe@tarc.edu.my for details.
+    - text: |
+        Alternatively, applicants can take the Cambridge Linguaskill test.
+        Minimum scores required are 140 for Nutrition and 169 for English with Drama, Education, or Studies.
+        More details are available at https://www.tarc.edu.my/cpe/a/linguaskill/.
+    - text: |
+        Yes, Cambridge Linguaskill is accepted.
+        Applicants must score at least 140 for Nutrition and 169 for English-based programmes.
+        For more information, visit https://www.tarc.edu.my/cpe/a/linguaskill/ or email cpe@tarc.edu.my.
+
+  utter_medium_instruction_english_requirement:
+    - text: |
+        Yes, MUET or IELTS is still required for English with Drama, English with Education, and English Studies programmes,
+        even if your previous studies were conducted in English.
+        Alternatively, you may take Cambridge Linguaskill with a minimum score of 169.
+    - text: |
+        Even if your prior education was in English, you are still required to meet MUET or IELTS requirements
+        for English-related degree programmes. Cambridge Linguaskill (minimum 169) is also accepted.
+    - text: |
+        English-medium instruction alone does not waive the requirement.
+        MUET or IELTS is compulsory for English programmes, or you may take Cambridge Linguaskill with a minimum score of 169.
+    - text: |
+        For English-related programmes, MUET or IELTS is mandatory regardless of your previous medium of instruction.
+        Alternatively, Cambridge Linguaskill with a minimum score of 169 can be used.
+
+  utter_nutrition_english_exemption:
+    - text: |
+        Malaysian applicants whose previous studies were fully conducted in English are exempted from MUET
+        for the Bachelor Degree in Nutrition. However, they must still achieve at least 140 in Cambridge Linguaskill.
+    - text: |
+        If your prior education was entirely in English, you may be exempted from MUET for the Nutrition degree.
+        However, a minimum Linguaskill score of 140 is still required.
+    - text: |
+        MUET exemption is granted for Malaysian applicants with English-medium education applying for Nutrition.
+        Despite this, a Cambridge Linguaskill score of at least 140 must still be obtained.
+    - text: |
+        Applicants with English as the full medium of instruction may skip MUET for the Nutrition programme,
+        but must meet the minimum Linguaskill score of 140.
+
+  utter_admission_offer_chances:
+    - text: |
+        Meeting the minimum entry requirements allows your application to be considered, but does not guarantee admission.
+        Some programmes may require interviews or portfolio assessments, and selection depends on merit and available places.
+    - text: |
+        Fulfilling the minimum requirements makes you eligible for consideration.
+        However, admission depends on academic performance, programme demand, and available vacancies.
+    - text: |
+        While meeting the entry requirements is necessary, it does not ensure acceptance.
+        Certain programmes may include interviews or portfolio reviews, and offers are based on merit and availability.
+    - text: |
+        Admission is competitive and based on academic merit, programme selection, and seat availability.
+        Some courses may also require interviews or portfolio submissions in addition to minimum requirements.
+       
+
+  utter_mqa_accreditation:
+  - text: |
+      Yes, TAR UMT programmes are accredited by the Malaysian Qualifications Agency (MQA).
+      For more details, please visit: https://www.tarc.edu.my/mqa/index.jsp
+  - text: |
+      All programmes are accredited by MQA, ensuring they meet national quality standards.
+      More information is available at: https://www.tarc.edu.my/mqa/index.jsp
+  - text: |
+      Yes, the programmes offered are recognized and accredited by MQA.
+      You can check further details here: https://www.tarc.edu.my/mqa/index.jsp
+  - text: |
+      TAR UMT programmes are MQA-accredited, which ensures quality and recognition.
+      Visit https://www.tarc.edu.my/mqa/index.jsp for more information.
+
+  utter_apel_admission:
+    - text: |
+        Applicants with relevant work experience and an MQA APEL.A Certificate may be considered for admission on a case-by-case basis.
+        To apply for APEL, please visit https://www2.mqa.gov.my/APEL/. Final admission is subject to university approval.
+    - text: |
+        If you have work experience and hold an MQA APEL.A Certificate, your application may be reviewed individually.
+        For APEL applications, go to https://www2.mqa.gov.my/APEL/. Admission decisions are at the university’s discretion.
+    - text: |
+        Candidates with an APEL.A Certificate and relevant experience can apply for admission, subject to case-by-case evaluation.
+        More information is available at https://www2.mqa.gov.my/APEL/.
+    - text: |
+        Admission through APEL is possible for applicants with relevant experience and an APEL.A Certificate.
+        Visit https://www2.mqa.gov.my/APEL/ to learn more. Approval is subject to university discretion.
+        
+
+
+
+# Scholarships & Financial Aid
+  utter_merit_scholarship:
+    - text: |
+        The Merit Scholarship is awarded to outstanding Malaysian students and offers up to 100% tuition fee waiver. Eligible candidates will automatically be considered and awarded upon admission (terms and conditions apply).
+    - text: |
+        Outstanding Malaysian students may receive the Merit Scholarship, which provides up to a full (100%) tuition fee waiver. Qualified applicants are automatically offered the scholarship during admission.
+    - text: |
+        TAR UMT offers a Merit Scholarship of up to 100% tuition fee waiver for high-achieving Malaysian students. Those who meet the criteria will be automatically granted the scholarship upon admission, subject to terms and conditions.
+    - text: |
+        High-performing Malaysian students can benefit from the Merit Scholarship, which covers up to 100% of tuition fees. Eligible students are automatically awarded this scholarship when they are admitted.
+
+  utter_financial_aid:
+    - text: |
+        For details on financial aid such as grants, scholarships, study loans, and PTPTN, please visit the Financial Aid section on the website. New students can also refer to the Freshmen Guide. You may contact the Financial Aid Unit at fncaid@tarc.edu.my for enquiries.
+    - text: |
+        Information on financial assistance, including scholarships, grants, PTPTN, and study loans, is available on the Financial Aid section of the website. Freshmen are encouraged to check the Freshmen Guide, or email fncaid@tarc.edu.my for further assistance.
+    - text: |
+        You can explore financial aid options like scholarships, grants, and PTPTN through the Financial Aid page on the website. Additional guidance is available in the Freshmen Guide, or you may email fncaid@tarc.edu.my for enquiries.
+    - text: |
+        To learn more about available financial aid options such as study loans, PTPTN, scholarships, and grants, visit the Financial Aid section online. For more help, refer to the Freshmen Guide or contact fncaid@tarc.edu.my.
+
+  utter_hostel_application:
+    - text: "You must be a registered student to apply for hostel accommodation."
+    - text: "Hostel applications are available after you become a registered student."
+    - text: "Once enrolled, you can apply for accommodation through the Student Affairs department."
+
+
+
+# Acceptance & Payment
+
+  utter_accept_offer:
+  - text: |
+      To accept your offer of admission, you need to make the payment as stated in the Payment Details advice.
+      For guidance on how to pay, please refer to https://www.tarc.edu.my/bursary/guidelines-on-payment-of-fees/.
+  - text: |
+      You can accept your admission offer by paying the required fees указан in your Payment Details.
+      For payment instructions, visit https://www.tarc.edu.my/bursary/guidelines-on-payment-of-fees/.
+  - text: |
+      Acceptance of your offer is confirmed once you complete the fee payment указан in the Payment Details advice.
+      Please refer to https://www.tarc.edu.my/bursary/guidelines-on-payment-of-fees/ for payment guidelines.
+  - text: |
+      To proceed with your admission, simply pay the fees as указан in your Payment Details advice.
+      You may check the payment guide here: https://www.tarc.edu.my/bursary/guidelines-on-payment-of-fees/.
+
+  utter_reject_offer:
+    - text: |
+        If you decide not to accept the offer, no payment is required. The offer will automatically lapse after the payment deadline.
+    - text: |
+        You do not need to take any action if you are not accepting the offer. It will expire automatically once the payment due date has passed.
+    - text: |
+        No payment is needed if you choose to decline the offer. The admission offer will lapse after the specified payment deadline.
+    - text: |
+        If you do not wish to proceed, simply do not make the payment. The offer will be cancelled automatically after the due date.
+
+  utter_late_payment:
+    - text: |
+        If you miss the payment deadline, you must submit an appeal for late registration. A late fee of RM50 will be charged.
+        For KL Campus, email admission@tarc.edu.my. For branch campuses, refer to https://www.tarc.edu.my/contact-us/ for email addresses.
+        Approval is subject to university discretion.
+    - text: |
+        Late registration requires an appeal and a RM50 late fee.
+        KL applicants should email admission@tarc.edu.my, while branch applicants should contact their respective campuses via https://www.tarc.edu.my/contact-us/.
+        Approval is not guaranteed.
+    - text: |
+        You will need to appeal for late registration if payment is delayed, and a RM50 fee applies.
+        Contact admission@tarc.edu.my for KL Campus or your respective branch via https://www.tarc.edu.my/contact-us/.
+        All appeals are subject to approval.
+    - text: |
+        In case of late payment, an appeal for late registration must be submitted along with a RM50 fee.
+        Email admission@tarc.edu.my for KL or check branch contacts at https://www.tarc.edu.my/contact-us/.
+        Approval depends on the university.
+
+  utter_sk_financial_help_after_offer:
+    - text: |
+        For more information on financial assistance, please refer to the Freshmen Guide under Financial Aid:
+        https://www.tarc.edu.my/files/dsa/D8E16D47-5850-4C87-BAD8-CB2D8A30C9AC.pdf
+    - text: |
+        You can learn more about financial aid options in the Freshmen Guide available here:
+        https://www.tarc.edu.my/files/dsa/D8E16D47-5850-4C87-BAD8-CB2D8A30C9AC.pdf
+    - text: |
+        Detailed information on financial assistance is provided in the Freshmen Guide:
+        https://www.tarc.edu.my/files/dsa/D8E16D47-5850-4C87-BAD8-CB2D8A30C9AC.pdf
+    - text: |
+        Please refer to the Freshmen Guide for financial aid details at the following link:
+        https://www.tarc.edu.my/files/dsa/D8E16D47-5850-4C87-BAD8-CB2D8A30C9AC.pdf
+
+
+
+# After Payment
+
+  utter_after_fee_payment:
+  - text: |
+      After paying your fees, log in to http://bit.ly/TARUMTapp and click on 'Information for Freshmen' 
+      on the left panel of the Application Status page for further details.
+  - text: |
+      Once your payment is confirmed, visit http://bit.ly/TARUMTapp and select 'Information for Freshmen' 
+      from the Application Status page menu for more information.
+  - text: |
+      You are advised to log on to http://bit.ly/TARUMTapp after fee payment and click 'Information for Freshmen' 
+      on the left panel of your Application Status page to access important information.
+  - text: |
+      Following fee payment, please access http://bit.ly/TARUMTapp and navigate to 'Information for Freshmen' 
+      on the Application Status page for guidance and updates.
+
+  utter_student_login_info:
+    - text: |
+        Please log in to http://bit.ly/TARUMTapp 2–3 working days after paying the fees to access 
+        your Student Registration Number, Email, Intranet, and E-Learning login details.
+    - text: |
+        After 2–3 working days from fee payment, log on to http://bit.ly/TARUMTapp for your Student Registration Number, 
+        Email login, Intranet, and E-Learning access.
+    - text: |
+        Your Student Registration Number and login credentials for Email, Intranet, and E-Learning 
+        can be viewed 2–3 working days after fee payment at http://bit.ly/TARUMTapp.
+    - text: |
+        Please check http://bit.ly/TARUMTapp 2–3 working days post-payment to retrieve your Student Registration Number and login details for Email, Intranet, and E-Learning.
+
+  utter_orientation_timetable:
+    - text: |
+        Check your Orientation schedule and timetable just before the programme starts by logging in to the Student Intranet at https://web.tarc.edu.my/portal/login.jsp.
+    - text: |
+        Please visit https://web.tarc.edu.my/portal/login.jsp on the Student Intranet to view your Orientation timetable and class schedule prior to programme commencement.
+    - text: |
+        Orientation and class timetables are available on the Student Intranet at https://web.tarc.edu.my/portal/login.jsp, just before the start of your programme.
+    - text: |
+        Log in to the Student Intranet at https://web.tarc.edu.my/portal/login.jsp shortly before the programme begins to access your Orientation schedule and timetable.
+
+  utter_programme_transfer:
+    - text: |
+        As a registered student who has paid fees, you may apply for a programme transfer. 
+        Deadlines: Diploma & Bachelor’s Degree – by Tuesday of Week 4 (January & June intakes) or Friday of Week 1 (November intake); Foundation – by Friday of Week 2 post-commencement.
+    - text: |
+        Registered students can request a programme transfer. 
+        Deadlines: Diploma/Bachelor – Tuesday of Week 4 (Jan/Jun) or Friday of Week 1 (Nov); Foundation – Friday of Week 2 after start.
+    - text: |
+        You may apply for a programme transfer as a registered student. 
+        Diploma and Degree programmes: no later than Week 4 Tuesday (Jan/Jun) or Week 1 Friday (Nov). 
+        Foundation: Week 2 Friday after commencement.
+    - text: |
+        Programme transfer is possible after registration. Deadlines are:
+        Diploma & Bachelor – Week 4 Tuesday (Jan/Jun) or Week 1 Friday (Nov); Foundation – Week 2 Friday.
+
+  utter_sibling_discount:
+    - text: |
+        For eligibility and details on the TAR UMT Sibling Discount, please visit: https://www.tarc.edu.my/admissions/a/sibling-discount-for-malaysians-only/
+    - text: |
+        More information about the Sibling Discount for Malaysian students, including eligibility, can be found at: https://www.tarc.edu.my/admissions/a/sibling-discount-for-malaysians-only/
+    - text: |
+        To learn about the TAR UMT Sibling Discount and check eligibility criteria, visit: https://www.tarc.edu.my/admissions/a/sibling-discount-for-malaysians-only/
+    - text: |
+        Please refer to https://www.tarc.edu.my/admissions/a/sibling-discount-for-malaysians-only/ for details and eligibility requirements for the Sibling Discount.
+
+# Default Fallback
+  utter_default:
+    - text: "Sorry, I didn’t understand that. Can you rephrase your question?"
+    - text: "I’m not sure I got that. Could you ask in another way?"
+    - text: "Oops, I didn’t catch that. Try asking differently?"
 
 actions:
   - action_get_course_info
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
