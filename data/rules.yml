@@ -1,12 +1,125 @@
 version: "3.1"
 
 rules:
-- rule: greet
-  steps:
-  - intent: greet
-  - action: utter_greet
 
-- rule: goodbye
+- rule: programmes offered
   steps:
-  - intent: goodbye
-  - action: utter_goodbye
+    - intent: ask_programmes_offered
+    - action: utter_ask_programmes_offered
+
+- rule: intake dates
+  steps:
+    - intent: ask_intake_dates
+    - action: utter_ask_intake_dates
+
+- rule: campuses
+  steps:
+    - intent: ask_number_of_campuses
+    - action: utter_ask_number_of_campuses
+
+- rule: fees
+  steps:
+    - intent: ask_programme_fees
+    - action: utter_ask_programme_fees
+
+- rule: semester info
+  steps:
+    - intent: ask_semester_info
+    - action: utter_ask_semester_info
+
+
+- rule: how to apply
+  steps:
+    - intent: ask_how_to_apply
+    - action: utter_ask_how_to_apply
+
+- rule: required documents
+  steps:
+    - intent: ask_required_documents
+    - action: utter_ask_required_documents
+
+- rule: additional documents
+  steps:
+    - intent: ask_additional_documents
+    - action: utter_ask_additional_documents
+
+- rule: application fee
+  steps:
+    - intent: ask_application_fee
+    - action: utter_ask_application_fee
+
+- rule: application deadline
+  steps:
+    - intent: ask_application_deadline
+    - action: utter_ask_application_deadline
+
+- rule: application result
+  steps:
+    - intent: ask_application_result
+    - action: utter_ask_application_result
+
+- rule: appeal
+  steps:
+    - intent: ask_appeal
+    - action: utter_ask_appeal
+
+- rule: entry requirements
+  steps:
+    - intent: ask_entry_requirements
+    - action: utter_ask_entry_requirements
+
+- rule: multiple sittings
+  steps:
+    - intent: ask_for_multiple_spm_sittings
+    - action: utter_spm_multiple_sittings
+
+- rule: english requirement uec
+  steps:
+    - intent: ask_uec_english_requirement_degree
+    - action: utter_uec_english_requirement_degree
+
+- rule: scholarship
+  steps:
+    - intent: ask_merit_scholarship
+    - action: utter_merit_scholarship
+
+- rule: financial aid
+  steps:
+    - intent: ask_financial_aid
+    - action: utter_financial_aid
+
+- rule: hostel
+  steps:
+    - intent: ask_hostel_application
+    - action: utter_hostel_application
+
+- rule: orientation
+  steps:
+    - intent: ask_orientation_timetable
+    - action: utter_orientation_timetable
+
+- rule: accept offer
+  steps:
+    - intent: ask_accept_offer
+    - action: utter_accept_offer
+
+- rule: reject offer
+  steps:
+    - intent: ask_reject_offer
+    - action: utter_reject_offer
+
+- rule: late payment
+  steps:
+    - intent: ask_late_payment
+    - action: utter_late_payment
+
+- rule: after payment
+  steps:
+    - intent: ask_after_fee_payment
+    - action: utter_after_fee_payment
+
+- rule: login info
+  steps:
+    - intent: ask_student_login_info
+    - action: utter_student_login_info
+

@@ -187,7 +187,7 @@ responses:
 
 
 # Entry Requirements
-  utter_entry_requirements:
+  utter_ask_entry_requirements:
   - text: |
       The general minimum entry requirements are:
       Foundation: SPM (5 credits) / O Level (5 Grade C) / UEC (3 Grade B) or equivalent.

@@ -1,19 +1,107 @@
 version: "3.1"
 
 stories:
-- story: ask course info
-  steps:
-  - intent: ask_course
-  - action: utter_ask_course
 
-- story: provide course info
-  steps:
-  - intent: ask_programme_type
-  - action: action_get_course_info
-  
-#entry requirement and career interest, 
-#intake date, 
-#basic info for financial, MQA, 
-#subscribing newsletter, 
-#google maps for point of interest
 
+- story: ask programmes
+  steps:
+    - intent: ask_programmes_offered
+    - action: utter_ask_programmes_offered
+
+- story: ask intake
+  steps:
+    - intent: ask_intake_dates
+    - action: utter_ask_intake_dates
+
+- story: ask fees
+  steps:
+    - intent: ask_programme_fees
+    - action: utter_ask_programme_fees
+
+- story: explore programmes to fees
+  steps:
+    - intent: ask_programmes_offered
+    - action: utter_ask_programmes_offered
+    - intent: ask_programme_fees
+    - action: utter_ask_programme_fees
+
+- story: programmes to intake
+  steps:
+    - intent: ask_programmes_offered
+    - action: utter_ask_programmes_offered
+    - intent: ask_intake_dates
+    - action: utter_ask_intake_dates
+
+- story: full application flow
+  steps:
+    - intent: ask_how_to_apply
+    - action: utter_ask_how_to_apply
+    - intent: ask_required_documents
+    - action: utter_ask_required_documents
+    - intent: ask_application_fee
+    - action: utter_ask_application_fee
+    - intent: ask_application_deadline
+    - action: utter_ask_application_deadline
+
+- story: application follow up
+  steps:
+    - intent: ask_how_to_apply
+    - action: utter_ask_how_to_apply
+    - intent: ask_application_result
+    - action: utter_ask_application_result
+
+- story: entry requirements to english requirement
+  steps:
+    - intent: ask_entry_requirements
+    - action: utter_ask_entry_requirements
+    - intent: ask_uec_english_requirement_degree
+    - action: utter_uec_english_requirement_degree
+
+- story: entry requirements to multiple sittings
+  steps:
+    - intent: ask_entry_requirements
+    - action: utter_ask_entry_requirements
+    - intent: ask_for_multiple_spm_sittings
+    - action: utter_spm_multiple_sittings
+
+- story: scholarship to financial aid
+  steps:
+    - intent: ask_merit_scholarship
+    - action: utter_merit_scholarship
+    - intent: ask_financial_aid
+    - action: utter_financial_aid
+
+- story: accept offer flow
+  steps:
+    - intent: ask_accept_offer
+    - action: utter_accept_offer
+    - intent: ask_after_fee_payment
+    - action: utter_after_fee_payment
+    - intent: ask_student_login_info
+    - action: utter_student_login_info
+
+- story: late payment flow
+  steps:
+    - intent: ask_late_payment
+    - action: utter_late_payment
+    - intent: ask_appeal
+    - action: utter_ask_appeal
+
+- story: hostel and orientation
+  steps:
+    - intent: ask_hostel_application
+    - action: utter_hostel_application
+    - intent: ask_orientation_timetable
+    - action: utter_orientation_timetable
+
+- story: programme transfer flow
+  steps:
+    - intent: ask_programme_transfer
+    - action: utter_programme_transfer
+
+- story: fees to financial help
+  steps:
+    - intent: ask_programme_fees
+    - action: utter_ask_programme_fees
+    - intent: ask_financial_help_after_offer
+    - action: utter_sk_financial_help_after_offer
