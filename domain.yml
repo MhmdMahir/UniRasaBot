@@ -106,7 +106,7 @@ responses:
 # Application Process
 
   utter_ask_how_to_apply:
-    - text: "Applications are open and must be submitted عبر the online portal. You can apply at http://bit.ly/TARUMTapp by registering as a new user."
+    - text: "Applications are open and must be submitted via the online portal. You can apply at http://bit.ly/TARUMTapp by registering as a new user."
     - text: "To apply, simply register as a new user on the online application portal: http://bit.ly/TARUMTapp and complete your submission there."
     - text: "All applications are done online. Visit http://bit.ly/TARUMTapp, create an account, and follow the steps to apply."
     - text: "You can apply through the TAR UMT online portal by signing up as a new user at http://bit.ly/TARUMTapp."

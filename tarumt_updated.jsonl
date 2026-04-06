@@ -1,4 +1,4 @@
-
+rasa run --enable-api --cors "*"
 {"category":"programme_fee","programme_level":"degree","field":"Applied Sciences","duration":"3-4 years","total_fee_rm_range":[37200,38400]}
 {"category":"programme_fee","programme_level":"degree","field":"Nutrition","duration":"3.5 years","total_fee_rm":43400}
 {"category":"programme_fee","programme_level":"degree","field":"Computing & IT","duration":"3-4 years","total_fee_rm_range":[37200,38400]}

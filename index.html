@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TARC Chatbot</title>
+</head>
+<body>
+
+<h2>TARC FAQ Chatbot</h2>
+
+<script src="https://cdn.jsdelivr.net/npm/rasa-webchat@1.0.1/lib/index.js"></script>
+
+<script>
+  WebChat.default({
+    initPayload: "/greet",
+    socketUrl: "http://127.0.0.1:5005",
+    socketPath: "/socket.io/",
+    title: "TARC Assistant",
+    subtitle: "Ask me anything!",
+    showFullScreenButton: true,
+    showCloseButton: true
+  }, null);
+</script>
+
+</body>
+</html>
