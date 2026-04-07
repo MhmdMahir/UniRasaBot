@@ -358,3 +358,62 @@ nlu:
     - When should I apply for sibling discount?
     - What are the requirements for sibling discount?
     - Is there a discount if my brother or sister studies here?
+
+- intent: ask_fallback
+  examples: |
+    - asdfghjkl
+    - ehgbiwerbgltr
+    - blabla random text
+    - i don't understand anything
+    - what even is this
+    - tarumt
+    - i don't know what to say
+    - tell me something weird
+    - ???
+
+- intent: ask_out_of_scope
+  examples: |
+    - what is the meaning of life
+    - who is the president of the world
+    - can you tell me a joke
+    - what is love
+    - do you like pizza
+    - how to become a millionaire
+    - what is the weather today
+    - can you sing a song
+
+- intent: ask_greet
+  examples: |
+    - hi
+    - hello
+    - hey
+    - good morning
+    - good afternoon
+    - good evening
+
+- intent: ask_goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you later
+    - take care
+    - see you soon
+    - have a nice day
+    - i leave first
+
+- intent: ask_thanks
+  examples: |
+    - thanks
+    - thank you
+    - thank you very much
+    - thanks a lot
+    - thank you so much
+    - i appreciate it
+
+- intent: ask_small_talk
+  examples: |
+    - how you doing
+    - how are you
+    - what's the latest news
+    - any updates
+    - what's happening

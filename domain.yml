@@ -38,6 +38,12 @@ intents:
   - ask_orientation_timetable
   - ask_programme_transfer
   - ask_sibling_discount
+  - ask_fallback
+  - ask_out_of_scope
+  - ask_greet
+  - ask_goodbye
+  - ask_thanks
+  - ask_small_talk
 
 responses:
 # General Information
@@ -213,7 +219,7 @@ responses:
       Degree programmes require STPM (2 principal passes), A Level (2 Ds), or UEC (5 Bs).
       Visit https://dace.tarc.edu.my/programmes/intakes for further details.
 
-  utter_spm_multiple_sittings:
+  utter_ask_for_multiple_spm_sittings:
     - text: |
         Yes, you can combine results from multiple SPM or O Level sittings to meet the minimum entry requirements for 
         Foundation and Diploma programmes.
@@ -227,7 +233,7 @@ responses:
         For Foundation and Diploma admissions, results from more than one SPM or O Level sitting can be considered 
         to meet the requirements.
 
-  utter_dpr_english_requirement:
+  utter_ask_dpr_english_requirement:
     - text: |
         For the DPR programme, a credit in English Language is compulsory as part of the entry requirements. The English 
         Language bridging course cannot replace this requirement.
@@ -242,7 +248,7 @@ responses:
         alternative to fulfill this requirement.
         
 
-  utter_uec_english_requirement_degree:
+  utter_ask_uec_english_requirement_degree:
   - text: |
       Applicants with UEC qualifications applying for Bachelor Degree programmes must meet MUET or IELTS requirements.
       For Nutrition: minimum MUET Band 3 or IELTS 4.0.
@@ -258,7 +264,7 @@ responses:
       For UEC applicants entering degree programmes, MUET or IELTS is required.
       The minimum is Band 3 / IELTS 4.0 for Nutrition, and Band 4 / IELTS 6.0 for English-related programmes.
 
-  utter_alternative_english_test:
+  utter_ask_alternative_english_test:
     - text: |
         Yes, you may take the Cambridge Linguaskill test as an alternative.
         Required scores are:
@@ -278,7 +284,7 @@ responses:
         Applicants must score at least 140 for Nutrition and 169 for English-based programmes.
         For more information, visit https://www.tarc.edu.my/cpe/a/linguaskill/ or email cpe@tarc.edu.my.
 
-  utter_medium_instruction_english_requirement:
+  utter_ask_medium_instruction_english_requirement:
     - text: |
         Yes, MUET or IELTS is still required for English with Drama, English with Education, and English Studies programmes,
         even if your previous studies were conducted in English.
@@ -293,7 +299,7 @@ responses:
         For English-related programmes, MUET or IELTS is mandatory regardless of your previous medium of instruction.
         Alternatively, Cambridge Linguaskill with a minimum score of 169 can be used.
 
-  utter_nutrition_english_exemption:
+  utter_ask_nutrition_english_exemption:
     - text: |
         Malaysian applicants whose previous studies were fully conducted in English are exempted from MUET
         for the Bachelor Degree in Nutrition. However, they must still achieve at least 140 in Cambridge Linguaskill.
@@ -307,7 +313,7 @@ responses:
         Applicants with English as the full medium of instruction may skip MUET for the Nutrition programme,
         but must meet the minimum Linguaskill score of 140.
 
-  utter_admission_offer_chances:
+  utter_ask_admission_offer_chances:
     - text: |
         Meeting the minimum entry requirements allows your application to be considered, but does not guarantee admission.
         Some programmes may require interviews or portfolio assessments, and selection depends on merit and available places.
@@ -322,7 +328,7 @@ responses:
         Some courses may also require interviews or portfolio submissions in addition to minimum requirements.
        
 
-  utter_mqa_accreditation:
+  utter_ask_mqa_accreditation:
   - text: |
       Yes, TAR UMT programmes are accredited by the Malaysian Qualifications Agency (MQA).
       For more details, please visit: https://www.tarc.edu.my/mqa/index.jsp
@@ -336,7 +342,7 @@ responses:
       TAR UMT programmes are MQA-accredited, which ensures quality and recognition.
       Visit https://www.tarc.edu.my/mqa/index.jsp for more information.
 
-  utter_apel_admission:
+  utter_ask_apel_admission:
     - text: |
         Applicants with relevant work experience and an MQA APEL.A Certificate may be considered for admission on a case-by-case basis.
         To apply for APEL, please visit https://www2.mqa.gov.my/APEL/. Final admission is subject to university approval.
@@ -354,7 +360,7 @@ responses:
 
 
 # Scholarships & Financial Aid
-  utter_merit_scholarship:
+  utter_ask_merit_scholarship:
     - text: |
         The Merit Scholarship is awarded to outstanding Malaysian students and offers up to 100% tuition fee waiver. Eligible candidates will automatically be considered and awarded upon admission (terms and conditions apply).
     - text: |
@@ -364,7 +370,7 @@ responses:
     - text: |
         High-performing Malaysian students can benefit from the Merit Scholarship, which covers up to 100% of tuition fees. Eligible students are automatically awarded this scholarship when they are admitted.
 
-  utter_financial_aid:
+  utter_ask_financial_aid:
     - text: |
         For details on financial aid such as grants, scholarships, study loans, and PTPTN, please visit the Financial Aid section on the website. New students can also refer to the Freshmen Guide. You may contact the Financial Aid Unit at fncaid@tarc.edu.my for enquiries.
     - text: |
@@ -374,7 +380,7 @@ responses:
     - text: |
         To learn more about available financial aid options such as study loans, PTPTN, scholarships, and grants, visit the Financial Aid section online. For more help, refer to the Freshmen Guide or contact fncaid@tarc.edu.my.
 
-  utter_hostel_application:
+  utter_ask_hostel_application:
     - text: "You must be a registered student to apply for hostel accommodation."
     - text: "Hostel applications are available after you become a registered student."
     - text: "Once enrolled, you can apply for accommodation through the Student Affairs department."
@@ -383,7 +389,7 @@ responses:
 
 # Acceptance & Payment
 
-  utter_accept_offer:
+  utter_ask_accept_offer:
   - text: |
       To accept your offer of admission, you need to make the payment as stated in the Payment Details advice.
       For guidance on how to pay, please refer to https://www.tarc.edu.my/bursary/guidelines-on-payment-of-fees/.
@@ -397,7 +403,7 @@ responses:
       To proceed with your admission, simply pay the fees as указан in your Payment Details advice.
       You may check the payment guide here: https://www.tarc.edu.my/bursary/guidelines-on-payment-of-fees/.
 
-  utter_reject_offer:
+  utter_ask_reject_offer:
     - text: |
         If you decide not to accept the offer, no payment is required. The offer will automatically lapse after the payment deadline.
     - text: |
@@ -407,7 +413,7 @@ responses:
     - text: |
         If you do not wish to proceed, simply do not make the payment. The offer will be cancelled automatically after the due date.
 
-  utter_late_payment:
+  utter_ask_late_payment:
     - text: |
         If you miss the payment deadline, you must submit an appeal for late registration. A late fee of RM50 will be charged.
         For KL Campus, email admission@tarc.edu.my. For branch campuses, refer to https://www.tarc.edu.my/contact-us/ for email addresses.
@@ -425,7 +431,7 @@ responses:
         Email admission@tarc.edu.my for KL or check branch contacts at https://www.tarc.edu.my/contact-us/.
         Approval depends on the university.
 
-  utter_sk_financial_help_after_offer:
+  utter_ask_financial_help_after_offer:
     - text: |
         For more information on financial assistance, please refer to the Freshmen Guide under Financial Aid:
         https://www.tarc.edu.my/files/dsa/D8E16D47-5850-4C87-BAD8-CB2D8A30C9AC.pdf
@@ -443,7 +449,7 @@ responses:
 
 # After Payment
 
-  utter_after_fee_payment:
+  utter_ask_after_fee_payment:
   - text: |
       After paying your fees, log in to http://bit.ly/TARUMTapp and click on 'Information for Freshmen' 
       on the left panel of the Application Status page for further details.
@@ -457,7 +463,7 @@ responses:
       Following fee payment, please access http://bit.ly/TARUMTapp and navigate to 'Information for Freshmen' 
       on the Application Status page for guidance and updates.
 
-  utter_student_login_info:
+  utter_ask_student_login_info:
     - text: |
         Please log in to http://bit.ly/TARUMTapp 2–3 working days after paying the fees to access 
         your Student Registration Number, Email, Intranet, and E-Learning login details.
@@ -470,7 +476,7 @@ responses:
     - text: |
         Please check http://bit.ly/TARUMTapp 2–3 working days post-payment to retrieve your Student Registration Number and login details for Email, Intranet, and E-Learning.
 
-  utter_orientation_timetable:
+  utter_ask_orientation_timetable:
     - text: |
         Check your Orientation schedule and timetable just before the programme starts by logging in to the Student Intranet at https://web.tarc.edu.my/portal/login.jsp.
     - text: |
@@ -480,7 +486,7 @@ responses:
     - text: |
         Log in to the Student Intranet at https://web.tarc.edu.my/portal/login.jsp shortly before the programme begins to access your Orientation schedule and timetable.
 
-  utter_programme_transfer:
+  utter_ask_programme_transfer:
     - text: |
         As a registered student who has paid fees, you may apply for a programme transfer. 
         Deadlines: Diploma & Bachelor’s Degree – by Tuesday of Week 4 (January & June intakes) or Friday of Week 1 (November intake); Foundation – by Friday of Week 2 post-commencement.
@@ -495,7 +501,7 @@ responses:
         Programme transfer is possible after registration. Deadlines are:
         Diploma & Bachelor – Week 4 Tuesday (Jan/Jun) or Week 1 Friday (Nov); Foundation – Week 2 Friday.
 
-  utter_sibling_discount:
+  utter_ask_sibling_discount:
     - text: |
         For eligibility and details on the TAR UMT Sibling Discount, please visit: https://www.tarc.edu.my/admissions/a/sibling-discount-for-malaysians-only/
     - text: |
@@ -506,11 +512,35 @@ responses:
         Please refer to https://www.tarc.edu.my/admissions/a/sibling-discount-for-malaysians-only/ for details and eligibility requirements for the Sibling Discount.
 
 # Default Fallback
-  utter_default:
+  utter_ask_fallback:
     - text: "Sorry, I didn’t understand that. Can you rephrase your question?"
     - text: "I’m not sure I got that. Could you ask in another way?"
     - text: "Oops, I didn’t catch that. Try asking differently?"
 
+  utter_ask_out_of_scope:
+    - text: "I’m here to help with questions about TAR UMT admissions. Can you ask something related to that?"
+    - text: "I can assist with TAR UMT admissions queries. Please ask something relevant to that topic."
+    - text: "My expertise is in TAR UMT admissions. Could you please ask a question related to that?"
+
+  utter_ask_greet:
+    - text: "Hello! How can I assist you with TAR UMT admissions today?"
+    - text: "Hi there! What would you like to know about TAR UMT admissions?"
+    - text: "Welcome! How can I help you with your questions about TAR UMT admissions?"
+
+  utter_ask_goodbye:
+    - text: "Goodbye! Feel free to ask if you have more questions about TAR UMT admissions."
+    - text: "See you later! Don’t hesitate to reach out if you have more questions about TAR UMT admissions."
+    - text: "Take care! I’m here if you need more information about TAR UMT admissions in the future."
+
+  utter_ask_thanks:
+    - text: "You’re welcome! If you have any more questions about TAR UMT admissions, just ask."
+    - text: "Glad I could help! Feel free to ask if you have more questions about TAR UMT admissions."
+    - text: "No problem! I’m here to assist with any further questions about TAR UMT admissions."
+
+  utter_ask_small_talk:
+    - text: "I’m here to help with your TAR UMT admissions questions. What would you like to know?"
+    - text: "Feel free to ask me anything about TAR UMT admissions!"
+    - text: "I can assist with information on TAR UMT admissions. What do you want to know?"
 actions:
   - action_get_course_info
 
