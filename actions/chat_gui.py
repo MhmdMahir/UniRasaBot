@@ -2,7 +2,6 @@ import tkinter as tk
 import requests
 import re
 from deep_translator import GoogleTranslator
-from langdetect import detect
 from tkinter import scrolledtext
 
 URL = "http://127.0.0.1:5005/webhooks/rest/webhook"
@@ -10,98 +9,97 @@ URL = "http://127.0.0.1:5005/webhooks/rest/webhook"
 # -------------------------------
 # BAD WORD LIST
 # -------------------------------
-bad_words = ["fuck", "shit", "bitch", "ass", "nigga", "cunt", "dick", "pussy", "asshole", "fucking"]
+bad_words = [
+    "fuck", "shit", "bitch", "ass", "nigga",
+    "cunt", "dick", "pussy", "asshole", "fucking"
+]
 
 # -------------------------------
-# UI CLEAN FILTER (SAFE)
+# LANGUAGE STORAGE (IMPORTANT FIX)
+# -------------------------------
+user_lang = "en"
+
+# -------------------------------
+# CLEAN UI FILTER (SAFE DISPLAY)
 # -------------------------------
 def clean_text_ui(text):
     def censor(match):
         return "*" * len(match.group())
 
-    # ONLY exact words (prevents "assist" issue)
     pattern = re.compile(r'\b(' + '|'.join(bad_words) + r')\b', re.IGNORECASE)
     return pattern.sub(censor, text)
 
 # -------------------------------
-# BACKEND FILTER (STRICT)
+# STRICT BACKEND FILTER
 # -------------------------------
 def clean_text_strict(text):
-    # Blocks variations like "fucking"
-    return re.sub(r'\b(fuck|shit|bitch|ass)\w*\b', '****', text, flags=re.IGNORECASE)
+    return re.sub(
+        r'\b(fuck|shit|bitch|ass)\w*\b',
+        '****',
+        text,
+        flags=re.IGNORECASE
+    )
 
 # -------------------------------
-# LANGUAGE DETECTION
+# STEP 1: DETECT LANGUAGE PROPERLY
 # -------------------------------
 def detect_language(text):
-    text = text.lower().strip()
-
-    if len(text) <= 3:
+    global user_lang
+    try:
+        lang = GoogleTranslator(source='auto', target='en').detect(text)
+        user_lang = lang
+        return lang
+    except:
+        user_lang = "en"
         return "en"
 
-    malay_keywords = [
-        "apa", "saya", "awak", "boleh", "tak", "ya", "tidak",
-        "kenapa", "macam", "mana", "nak", "lah", "ni"
-    ]
-
-    if any(word in text for word in malay_keywords):
-        return "ms"
-
-    try:
-        lang = detect(text)
-        if lang in ["en", "ms", "zh-cn"]:
-            return lang
-    except:
-        pass
-
-    return "en"
-
 # -------------------------------
-# TRANSLATION
+# STEP 2: TRANSLATE TO ENGLISH
 # -------------------------------
-def translate_to_english(text, source_lang):
+def translate_to_english(text):
     try:
-        if source_lang == "en":
-            return text
-        return GoogleTranslator(source=source_lang, target='en').translate(text)
-    except:
-        return text
-
-def translate_from_english(text, target_lang):
-    try:
-        if target_lang == "en":
-            return text
-        return GoogleTranslator(source='en', target=target_lang).translate(text)
+        return GoogleTranslator(source='auto', target='en').translate(text)
     except:
         return text
 
 # -------------------------------
-# SEND MESSAGE
+# STEP 3: TRANSLATE BACK TO USER LANGUAGE
+# -------------------------------
+def translate_back(text):
+    global user_lang
+    try:
+        if user_lang == "en":
+            return text
+        return GoogleTranslator(source='en', target=user_lang).translate(text)
+    except:
+        return text
+
+# -------------------------------
+# SEND MESSAGE FUNCTION
 # -------------------------------
 def send_message():
     user_msg = entry.get().strip()
     if not user_msg:
         return
 
-    # UI CLEAN (user sees censored version)
+    # Detect language FIRST
+    detect_language(user_msg)
+
+    # UI display (cleaned user input)
     cleaned_user_msg = clean_text_ui(user_msg)
 
     chat_box.config(state=tk.NORMAL)
     chat_box.insert(tk.END, "You: " + cleaned_user_msg + "\n", "user")
     entry.delete(0, tk.END)
 
-    # Detect language
-    detected_lang = detect_language(user_msg)
+    # Translate to English for Rasa
+    translated = translate_to_english(user_msg)
 
-    # Translate
-    translated = translate_to_english(user_msg, detected_lang)
-
-    # STRICT CLEAN (for backend safety)
+    # Strict clean before sending to Rasa
     cleaned_input = clean_text_strict(translated.lower())
 
-    # Debug
     print("Original:", user_msg)
-    print("Detected:", detected_lang)
+    print("Detected Language:", user_lang)
     print("Translated:", translated)
     print("Backend Cleaned:", cleaned_input)
 
@@ -117,15 +115,15 @@ def send_message():
         chat_box.config(state=tk.DISABLED)
         return
 
-    # Show bot reply
+    # Bot response
     for msg in data:
         bot_reply = msg.get("text", "")
 
-        # UI clean (no "assist" bug)
+        # clean bot message
         bot_reply = clean_text_ui(bot_reply)
 
-        # Translate back
-        final_reply = translate_from_english(bot_reply, detected_lang)
+        # translate BACK to SAME language user used
+        final_reply = translate_back(bot_reply)
 
         chat_box.insert(tk.END, "Bot: " + final_reply + "\n\n", "bot")
 
@@ -136,7 +134,7 @@ def send_message():
 # GUI
 # -------------------------------
 root = tk.Tk()
-root.title("Smart Chatbot")
+root.title("Smart Multilingual Chatbot")
 root.geometry("500x600")
 root.configure(bg="#2C2F33")
 
