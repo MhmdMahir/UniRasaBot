@@ -1,0 +1,234 @@
+[
+  {
+    "text": "programme fee details",
+    "intent": "ask_programme_fees",
+    "intent_prediction": {
+      "name": "ask_application_fee",
+      "confidence": 0.5585190057754517
+    }
+  },
+  {
+    "text": "how much do I need to pay for diploma",
+    "intent": "ask_programme_fees",
+    "intent_prediction": {
+      "name": "ask_application_fee",
+      "confidence": 0.2572554349899292
+    }
+  },
+  {
+    "text": "what documents are needed",
+    "intent": "ask_required_documents",
+    "intent_prediction": {
+      "name": "ask_number_of_campuses",
+      "confidence": 0.26928529143333435
+    }
+  },
+  {
+    "text": "documents required for application",
+    "intent": "ask_required_documents",
+    "intent_prediction": {
+      "name": "ask_additional_documents",
+      "confidence": 0.11647661030292511
+    }
+  },
+  {
+    "text": "what do I need to upload",
+    "intent": "ask_required_documents",
+    "intent_prediction": {
+      "name": "ask_medium_instruction_english_requirement",
+      "confidence": 0.12453973293304443
+    }
+  },
+  {
+    "text": "what are the documents needed for application",
+    "intent": "ask_required_documents",
+    "intent_prediction": {
+      "name": "ask_number_of_campuses",
+      "confidence": 0.12526965141296387
+    }
+  },
+  {
+    "text": "what documents do I need to submit",
+    "intent": "ask_required_documents",
+    "intent_prediction": {
+      "name": "ask_additional_documents",
+      "confidence": 0.14626072347164154
+    }
+  },
+  {
+    "text": "what documents are required for application",
+    "intent": "ask_required_documents",
+    "intent_prediction": {
+      "name": "ask_medium_instruction_english_requirement",
+      "confidence": 0.16446231305599213
+    }
+  },
+  {
+    "text": "what should I submit for application",
+    "intent": "ask_required_documents",
+    "intent_prediction": {
+      "name": "ask_merit_scholarship",
+      "confidence": 0.10352946072816849
+    }
+  },
+  {
+    "text": "what documents do I need to provide",
+    "intent": "ask_required_documents",
+    "intent_prediction": {
+      "name": "ask_medium_instruction_english_requirement",
+      "confidence": 0.1912378966808319
+    }
+  },
+  {
+    "text": "deadline for application",
+    "intent": "ask_application_deadline",
+    "intent_prediction": {
+      "name": "ask_how_to_apply",
+      "confidence": 0.4548660218715668
+    }
+  },
+  {
+    "text": "when does application close",
+    "intent": "ask_application_deadline",
+    "intent_prediction": {
+      "name": "ask_how_to_apply",
+      "confidence": 0.504177451133728
+    }
+  },
+  {
+    "text": "can I submit trial spm results",
+    "intent": "ask_incomplete_application",
+    "intent_prediction": {
+      "name": "ask_entry_requirements",
+      "confidence": 0.3237019181251526
+    }
+  },
+  {
+    "text": "Can I use Cambridge Linguaskill for admission?",
+    "intent": "ask_alternative_english_test",
+    "intent_prediction": {
+      "name": "ask_entry_requirements",
+      "confidence": 0.2034623920917511
+    }
+  },
+  {
+    "text": "What is the alternative to IELTS for English requirement?",
+    "intent": "ask_alternative_english_test",
+    "intent_prediction": {
+      "name": "ask_entry_requirements",
+      "confidence": 0.18158309161663055
+    }
+  },
+  {
+    "text": "Is Linguaskill accepted for Nutrition or English degree?",
+    "intent": "ask_alternative_english_test",
+    "intent_prediction": {
+      "name": "ask_entry_requirements",
+      "confidence": 0.3172374367713928
+    }
+  },
+  {
+    "text": "What score do I need for Linguaskill to enter the programme?",
+    "intent": "ask_alternative_english_test",
+    "intent_prediction": {
+      "name": "ask_entry_requirements",
+      "confidence": 0.18461698293685913
+    }
+  },
+  {
+    "text": "how to accept offer",
+    "intent": "ask_accept_offer",
+    "intent_prediction": {
+      "name": "ask_how_to_apply",
+      "confidence": 0.5624826550483704
+    }
+  },
+  {
+    "text": "accept admission",
+    "intent": "ask_accept_offer",
+    "intent_prediction": {
+      "name": "ask_how_to_apply",
+      "confidence": 0.2734799087047577
+    }
+  },
+  {
+    "text": "what to do after getting offer",
+    "intent": "ask_accept_offer",
+    "intent_prediction": {
+      "name": "ask_after_fee_payment",
+      "confidence": 0.17405349016189575
+    }
+  },
+  {
+    "text": "what if I don’t accept offer",
+    "intent": "ask_reject_offer",
+    "intent_prediction": {
+      "name": "ask_appeal",
+      "confidence": 0.16781678795814514
+    }
+  },
+  {
+    "text": "do I need to pay if not interested",
+    "intent": "ask_reject_offer",
+    "intent_prediction": {
+      "name": "ask_medium_instruction_english_requirement",
+      "confidence": 0.15244430303573608
+    }
+  },
+  {
+    "text": "can I still pay late",
+    "intent": "ask_late_payment",
+    "intent_prediction": {
+      "name": "ask_merit_scholarship",
+      "confidence": 0.28621387481689453
+    }
+  },
+  {
+    "text": "late registration",
+    "intent": "ask_late_payment",
+    "intent_prediction": {
+      "name": "ask_small_talk",
+      "confidence": 0.3765493929386139
+    }
+  },
+  {
+    "text": "need help paying fees",
+    "intent": "ask_financial_help_after_offer",
+    "intent_prediction": {
+      "name": "ask_application_fee",
+      "confidence": 0.14578883349895477
+    }
+  },
+  {
+    "text": "financial assistance after admission",
+    "intent": "ask_financial_help_after_offer",
+    "intent_prediction": {
+      "name": "ask_financial_aid",
+      "confidence": 0.12014557421207428
+    }
+  },
+  {
+    "text": "Where can I find information for freshmen?",
+    "intent": "ask_after_fee_payment",
+    "intent_prediction": {
+      "name": "ask_application_deadline",
+      "confidence": 0.19423969089984894
+    }
+  },
+  {
+    "text": "I have a sibling studying here, do I get discount?",
+    "intent": "ask_sibling_discount",
+    "intent_prediction": {
+      "name": "ask_medium_instruction_english_requirement",
+      "confidence": 0.4357416331768036
+    }
+  },
+  {
+    "text": "What are the requirements for sibling discount?",
+    "intent": "ask_sibling_discount",
+    "intent_prediction": {
+      "name": "ask_medium_instruction_english_requirement",
+      "confidence": 0.48917803168296814
+    }
+  }
+]
