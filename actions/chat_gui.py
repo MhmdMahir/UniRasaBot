@@ -6,22 +6,15 @@ from tkinter import scrolledtext
 
 URL = "http://127.0.0.1:5005/webhooks/rest/webhook"
 
-# -------------------------------
-# BAD WORD LIST
-# -------------------------------
+# listing ssome bad words 
 bad_words = [
     "fuck", "shit", "bitch", "ass", "nigga",
     "cunt", "dick", "pussy", "asshole", "fucking"
 ]
 
-# -------------------------------
-# LANGUAGE STORAGE (IMPORTANT FIX)
-# -------------------------------
+# defoult english
 user_lang = "en"
 
-# -------------------------------
-# CLEAN UI FILTER (SAFE DISPLAY)
-# -------------------------------
 def clean_text_ui(text):
     def censor(match):
         return "*" * len(match.group())
@@ -29,9 +22,6 @@ def clean_text_ui(text):
     pattern = re.compile(r'\b(' + '|'.join(bad_words) + r')\b', re.IGNORECASE)
     return pattern.sub(censor, text)
 
-# -------------------------------
-# STRICT BACKEND FILTER
-# -------------------------------
 def clean_text_strict(text):
     return re.sub(
         r'\b(fuck|shit|bitch|ass)\w*\b',
@@ -40,9 +30,6 @@ def clean_text_strict(text):
         flags=re.IGNORECASE
     )
 
-# -------------------------------
-# STEP 1: DETECT LANGUAGE PROPERLY
-# -------------------------------
 def detect_language(text):
     global user_lang
     try:
@@ -53,18 +40,13 @@ def detect_language(text):
         user_lang = "en"
         return "en"
 
-# -------------------------------
-# STEP 2: TRANSLATE TO ENGLISH
-# -------------------------------
+
 def translate_to_english(text):
     try:
         return GoogleTranslator(source='auto', target='en').translate(text)
     except:
         return text
 
-# -------------------------------
-# STEP 3: TRANSLATE BACK TO USER LANGUAGE
-# -------------------------------
 def translate_back(text):
     global user_lang
     try:
@@ -74,18 +56,15 @@ def translate_back(text):
     except:
         return text
 
-# -------------------------------
-# SEND MESSAGE FUNCTION
-# -------------------------------
 def send_message():
     user_msg = entry.get().strip()
     if not user_msg:
         return
 
-    # Detect language FIRST
+    # Detect language first 
     detect_language(user_msg)
 
-    # UI display (cleaned user input)
+    
     cleaned_user_msg = clean_text_ui(user_msg)
 
     chat_box.config(state=tk.NORMAL)
@@ -130,9 +109,8 @@ def send_message():
     chat_box.config(state=tk.DISABLED)
     chat_box.yview(tk.END)
 
-# -------------------------------
-# GUI
-# -------------------------------
+
+# gui itself
 root = tk.Tk()
 root.title("Smart Multilingual Chatbot")
 root.geometry("500x600")
@@ -155,6 +133,10 @@ chat_box.pack(fill=tk.BOTH, expand=True)
 
 chat_box.tag_config("user", foreground="#00BFFF")
 chat_box.tag_config("bot", foreground="#7CFC00")
+
+chat_box.config(state=tk.NORMAL)
+chat_box.insert(tk.END, "Bot: Hello! How can I help you?\n\n", "bot")
+chat_box.config(state=tk.DISABLED)
 
 input_frame = tk.Frame(root, bg="#2C2F33")
 input_frame.pack(fill=tk.X, padx=10, pady=10)
@@ -181,5 +163,6 @@ send_btn = tk.Button(
     pady=5
 )
 send_btn.pack(side=tk.RIGHT)
+
 
 root.mainloop()

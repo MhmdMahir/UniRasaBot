@@ -49,10 +49,10 @@ responses:
 # General Information
 
   utter_ask_programmes_offered:
-    - text: "You can explore Bachelor Degree and Diploma programmes here: https://www.tarc.edu.my/admissions/programmes/programme-offered-a-z/undergraduate-programme/. For Foundation programmes, visit: https://www.tarc.edu.my/admissions/programmes/programme-offered-a-z/pre-university-programme/."
-    - text: "All Undergraduate (Bachelor & Diploma) programmes are listed at: https://www.tarc.edu.my/admissions/programmes/programme-offered-a-z/undergraduate-programme/. Foundation options are available at: https://www.tarc.edu.my/admissions/programmes/programme-offered-a-z/pre-university-programme/."
-    - text: "Looking for programmes? Check out Bachelor and Diploma courses here: https://www.tarc.edu.my/admissions/programmes/programme-offered-a-z/undergraduate-programme/, and Foundation programmes here: https://www.tarc.edu.my/admissions/programmes/programme-offered-a-z/pre-university-programme/."
-    - text: "You can find a full list of undergraduate programmes (Degree & Diploma) at: https://www.tarc.edu.my/admissions/programmes/programme-offered-a-z/undergraduate-programme/. Foundation programmes are listed here: https://www.tarc.edu.my/admissions/programmes/programme-offered-a-z/pre-university-programme/."
+    - text: "You can explore Bachelor Degree and Diploma programmes here: [Undergraduate Programmes](https://www.tarc.edu.my/admissions/programmes/programme-offered-a-z/undergraduate-programme/). For Foundation programmes, visit: [Foundation Programmes](https://www.tarc.edu.my/admissions/programmes/programme-offered-a-z/pre-university-programme/)."
+    - text: "All Undergraduate (Bachelor & Diploma) programmes are listed at: [Undergraduate Programmes](https://www.tarc.edu.my/admissions/programmes/programme-offered-a-z/undergraduate-programme/). Foundation options are available at: [Foundation Programmes](https://www.tarc.edu.my/admissions/programmes/programme-offered-a-z/pre-university-programme/)."
+    - text: "Looking for programmes? Check out Bachelor and Diploma courses here: [Undergraduate Programmes](https://www.tarc.edu.my/admissions/programmes/programme-offered-a-z/undergraduate-programme/), and Foundation programmes here: [Foundation Programmes](https://www.tarc.edu.my/admissions/programmes/programme-offered-a-z/pre-university-programme/)."
+    - text: "You can find a full list of undergraduate programmes (Degree & Diploma) at: [Undergraduate Programmes](https://www.tarc.edu.my/admissions/programmes/programme-offered-a-z/undergraduate-programme/). Foundation programmes are listed here: [Foundation Programmes](https://www.tarc.edu.my/admissions/programmes/programme-offered-a-z/pre-university-programme/)."
 
   utter_ask_intake_dates:
     - text: "TAR UMT has intakes in January, May/June, September, and November, with May/June being the primary intake."
@@ -93,29 +93,29 @@ responses:
     - text: |
         Foundation programmes typically have semesters lasting 12 weeks with a 3-week break in between.
         For Diploma and Degree programmes, semesters usually last 14 weeks with a 4-week break, and a short semester of 7 weeks with a 3-week break.
-        More details can be found in the Academic Calendar: https://www.tarc.edu.my/admissions/new-student/academic-calendar/.
+        More details can be found in the Academic Calendar: [Academic Calendar](https://www.tarc.edu.my/admissions/new-student/academic-calendar/).
     - text: |
         The semester structure varies by programme:
         Foundation: 12-week semester with 3 weeks break.
         Diploma & Degree: 14-week semester with 4 weeks break, plus a 7-week short semester with 3 weeks break.
-        Refer to the Academic Calendar for more details: https://www.tarc.edu.my/admissions/new-student/academic-calendar/.
+        Refer to the Academic Calendar for more details: [Academic Calendar](https://www.tarc.edu.my/admissions/new-student/academic-calendar/).
     - text: |
         For Foundation studies, each semester is about 12 weeks long followed by a 3-week break.
         Diploma and Degree programmes have 14-week semesters with 4-week breaks, and shorter 7-week semesters with 3-week breaks.
-        Visit the Academic Calendar for full details: https://www.tarc.edu.my/admissions/new-student/academic-calendar/.
+        Visit the Academic Calendar for full details: [Academic Calendar](https://www.tarc.edu.my/admissions/new-student/academic-calendar/).
     - text: |
         Semester durations are as follows:
         Foundation: 12 weeks study + 3 weeks break.
         Diploma & Degree: 14 weeks study + 4 weeks break, and a 7-week short semester with a 3-week break.
-        Check the Academic Calendar here: https://www.tarc.edu.my/admissions/new-student/academic-calendar/.
+        Check the Academic Calendar here: [Academic Calendar](https://www.tarc.edu.my/admissions/new-student/academic-calendar/).
 
 # Application Process
 
   utter_ask_how_to_apply:
-    - text: "Applications are open and must be submitted via the online portal. You can apply at http://bit.ly/TARUMTapp by registering as a new user."
-    - text: "To apply, simply register as a new user on the online application portal: http://bit.ly/TARUMTapp and complete your submission there."
-    - text: "All applications are done online. Visit http://bit.ly/TARUMTapp, create an account, and follow the steps to apply."
-    - text: "You can apply through the TAR UMT online portal by signing up as a new user at http://bit.ly/TARUMTapp."
+    - text: "Applications are open and must be submitted via the online portal. You can apply at [TAR UMT Application Portal](http://bit.ly/TARUMTapp) by registering as a new user."
+    - text: "To apply, simply register as a new user on the online application portal: [TAR UMT Application Portal](http://bit.ly/TARUMTapp) and complete your submission there."
+    - text: "All applications are done online. Visit [TAR UMT Application Portal](http://bit.ly/TARUMTapp), create an account, and follow the steps to apply."
+    - text: "You can apply through the TAR UMT online portal by signing up as a new user at [TAR UMT Application Portal](http://bit.ly/TARUMTapp)."
 
   utter_ask_required_documents:
     - text: "Applicants must upload their MyKad (front and back), academic results such as SPM/O Level/STPM/A Level/UEC, and any relevant supporting documents. All files must be clear and in colour."
@@ -173,13 +173,13 @@ responses:
 
   utter_ask_application_result:
     - text: |
-        You can check your application status at http://bit.ly/TARUMTapp. Notifications will also be sent via email and SMS, including your offer letter if your application is successful.
+        You can check your application status at [TARUMT Application Portal](http://bit.ly/TARUMTapp). Notifications will also be sent via email and SMS, including your offer letter if your application is successful.
     - text: |
-        To track your application, log in to http://bit.ly/TARUMTapp. You will also receive updates through email and SMS regarding your status and offer letter.
+        To track your application, log in to [TARUMT Application Portal](http://bit.ly/TARUMTapp). You will also receive updates through email and SMS regarding your status and offer letter.
     - text: |
-        Application results can be checked online at http://bit.ly/TARUMTapp. You will also be notified via email and SMS once a decision has been made.
+        Application results can be checked online at [TARUMT Application Portal](http://bit.ly/TARUMTapp). You will also be notified via email and SMS once a decision has been made.
     - text: |
-        Visit http://bit.ly/TARUMTapp to view your application status. Successful applicants will receive their offer letter through email and SMS notifications.
+        Visit [TARUMT Application Portal](http://bit.ly/TARUMTapp) to view your application status. Successful applicants will receive their offer letter through email and SMS notifications.
 
   utter_ask_appeal:
     - text: |
@@ -199,25 +199,25 @@ responses:
       Foundation: SPM (5 credits) / O Level (5 Grade C) / UEC (3 Grade B) or equivalent.
       Diploma: SPM (3 credits) / O Level (3 Grade C) / UEC (3 Grade B) or equivalent.
       Bachelor Degree: STPM (2 principal passes) / A Level (2 Grade D) / UEC (5 Grade B) or equivalent.
-      For specific programme requirements, please visit https://dace.tarc.edu.my/programmes/intakes.
+      For specific programme requirements, please visit [Programme Intakes](https://dace.tarc.edu.my/programmes/intakes).
   - text: |
       Entry requirements vary by level:
       Foundation requires SPM with 5 credits, O Level with 5 Grade C, or UEC with 3 Grade B.
       Diploma requires SPM with 3 credits, O Level with 3 Grade C, or UEC with 3 Grade B.
       Degree programmes require STPM with 2 principal passes, A Level with 2 Grade D, or UEC with 5 Grade B.
-      More details are available at https://dace.tarc.edu.my/programmes/intakes.
+      More details are available at [Programme Intakes](https://dace.tarc.edu.my/programmes/intakes).
   - text: |
       Minimum qualifications are as follows:
       Foundation: 5 credits in SPM / 5 Grade C in O Level / 3 Grade B in UEC.
       Diploma: 3 credits in SPM / 3 Grade C in O Level / 3 Grade B in UEC.
       Bachelor Degree: 2 principal passes in STPM / 2 Grade D in A Level / 5 Grade B in UEC.
-      Kindly refer to https://dace.tarc.edu.my/programmes/intakes for programme-specific criteria.
+      Kindly refer to [Programme Intakes](https://dace.tarc.edu.my/programmes/intakes) for programme-specific criteria.
   - text: |
       To qualify for admission:
       Foundation programmes require SPM (5 credits), O Level (5 Cs), or UEC (3 Bs).
       Diploma programmes require SPM (3 credits), O Level (3 Cs), or UEC (3 Bs).
       Degree programmes require STPM (2 principal passes), A Level (2 Ds), or UEC (5 Bs).
-      Visit https://dace.tarc.edu.my/programmes/intakes for further details.
+      Visit [Programme Intakes](https://dace.tarc.edu.my/programmes/intakes) for further details.
 
   utter_ask_for_multiple_spm_sittings:
     - text: |
@@ -270,19 +270,19 @@ responses:
         Required scores are:
         Nutrition: minimum 140;
         English with Drama, Education, or Studies: minimum 169.
-        More info: https://www.tarc.edu.my/cpe/a/linguaskill/ or email cpe@tarc.edu.my.
+        More info: [Cambridge Linguaskill](https://www.tarc.edu.my/cpe/a/linguaskill/) or email cpe@tarc.edu.my.
     - text: |
         Cambridge Linguaskill is accepted as an alternative English test.
         You need a minimum score of 140 for Nutrition, and 169 for English-related programmes.
-        Visit https://www.tarc.edu.my/cpe/a/linguaskill/ or contact cpe@tarc.edu.my for details.
+        Visit [Cambridge Linguaskill](https://www.tarc.edu.my/cpe/a/linguaskill/) or contact cpe@tarc.edu.my for details.
     - text: |
         Alternatively, applicants can take the Cambridge Linguaskill test.
         Minimum scores required are 140 for Nutrition and 169 for English with Drama, Education, or Studies.
-        More details are available at https://www.tarc.edu.my/cpe/a/linguaskill/.
+        More details are available at [Cambridge Linguaskill](https://www.tarc.edu.my/cpe/a/linguaskill/).
     - text: |
         Yes, Cambridge Linguaskill is accepted.
         Applicants must score at least 140 for Nutrition and 169 for English-based programmes.
-        For more information, visit https://www.tarc.edu.my/cpe/a/linguaskill/ or email cpe@tarc.edu.my.
+        For more information, visit [Cambridge Linguaskill](https://www.tarc.edu.my/cpe/a/linguaskill/) or email cpe@tarc.edu.my.
 
   utter_ask_medium_instruction_english_requirement:
     - text: |
@@ -331,30 +331,30 @@ responses:
   utter_ask_mqa_accreditation:
   - text: |
       Yes, TAR UMT programmes are accredited by the Malaysian Qualifications Agency (MQA).
-      For more details, please visit: https://www.tarc.edu.my/mqa/index.jsp
+      For more details, please visit: [MQA Accreditation](https://www.tarc.edu.my/mqa/index.jsp)
   - text: |
       All programmes are accredited by MQA, ensuring they meet national quality standards.
-      More information is available at: https://www.tarc.edu.my/mqa/index.jsp
+      More information is available at: [MQA Accreditation](https://www.tarc.edu.my/mqa/index.jsp)
   - text: |
       Yes, the programmes offered are recognized and accredited by MQA.
-      You can check further details here: https://www.tarc.edu.my/mqa/index.jsp
+      You can check further details here: [MQA Accreditation](https://www.tarc.edu.my/mqa/index.jsp)
   - text: |
       TAR UMT programmes are MQA-accredited, which ensures quality and recognition.
-      Visit https://www.tarc.edu.my/mqa/index.jsp for more information.
+      Visit [MQA Accreditation](https://www.tarc.edu.my/mqa/index.jsp) for more information.
 
   utter_ask_apel_admission:
     - text: |
         Applicants with relevant work experience and an MQA APEL.A Certificate may be considered for admission on a case-by-case basis.
-        To apply for APEL, please visit https://www2.mqa.gov.my/APEL/. Final admission is subject to university approval.
+        To apply for APEL, please visit [APEL Application](https://www2.mqa.gov.my/APEL/). Final admission is subject to university approval.
     - text: |
         If you have work experience and hold an MQA APEL.A Certificate, your application may be reviewed individually.
-        For APEL applications, go to https://www2.mqa.gov.my/APEL/. Admission decisions are at the university’s discretion.
+        For APEL applications, go to [APEL Application](https://www2.mqa.gov.my/APEL/). Admission decisions are at the university’s discretion.
     - text: |
         Candidates with an APEL.A Certificate and relevant experience can apply for admission, subject to case-by-case evaluation.
-        More information is available at https://www2.mqa.gov.my/APEL/.
+        More information is available at [APEL Application](https://www2.mqa.gov.my/APEL/).
     - text: |
         Admission through APEL is possible for applicants with relevant experience and an APEL.A Certificate.
-        Visit https://www2.mqa.gov.my/APEL/ to learn more. Approval is subject to university discretion.
+        Visit [APEL Application](https://www2.mqa.gov.my/APEL/) to learn more. Approval is subject to university discretion.
         
 
 
@@ -392,16 +392,16 @@ responses:
   utter_ask_accept_offer:
   - text: |
       To accept your offer of admission, you need to make the payment as stated in the Payment Details advice.
-      For guidance on how to pay, please refer to https://www.tarc.edu.my/bursary/guidelines-on-payment-of-fees/.
+      For guidance on how to pay, please refer to [Payment Guidelines](https://www.tarc.edu.my/bursary/guidelines-on-payment-of-fees/).
   - text: |
       You can accept your admission offer by paying the required fees указан in your Payment Details.
-      For payment instructions, visit https://www.tarc.edu.my/bursary/guidelines-on-payment-of-fees/.
+      For payment instructions, visit [Payment Guidelines](https://www.tarc.edu.my/bursary/guidelines-on-payment-of-fees/).
   - text: |
       Acceptance of your offer is confirmed once you complete the fee payment указан in the Payment Details advice.
-      Please refer to https://www.tarc.edu.my/bursary/guidelines-on-payment-of-fees/ for payment guidelines.
+      Please refer to [Payment Guidelines](https://www.tarc.edu.my/bursary/guidelines-on-payment-of-fees/) for payment guidelines.
   - text: |
       To proceed with your admission, simply pay the fees as указан in your Payment Details advice.
-      You may check the payment guide here: https://www.tarc.edu.my/bursary/guidelines-on-payment-of-fees/.
+      You may check the payment guide here: [Payment Guidelines](https://www.tarc.edu.my/bursary/guidelines-on-payment-of-fees/).
 
   utter_ask_reject_offer:
     - text: |
@@ -416,34 +416,36 @@ responses:
   utter_ask_late_payment:
     - text: |
         If you miss the payment deadline, you must submit an appeal for late registration. A late fee of RM50 will be charged.
-        For KL Campus, email admission@tarc.edu.my. For branch campuses, refer to https://www.tarc.edu.my/contact-us/ for email addresses.
+        For KL Campus, email admission@tarc.edu.my. For branch campuses, refer to [Contact Us](https://www.tarc.edu.my/contact-us/) for email addresses.
         Approval is subject to university discretion.
     - text: |
         Late registration requires an appeal and a RM50 late fee.
-        KL applicants should email admission@tarc.edu.my, while branch applicants should contact their respective campuses via https://www.tarc.edu.my/contact-us/.
+        KL applicants should email admission@tarc.edu.my, while branch applicants should contact their respective campuses via [Contact Us](https://www.tarc.edu.my/contact-us/).
         Approval is not guaranteed.
     - text: |
         You will need to appeal for late registration if payment is delayed, and a RM50 fee applies.
-        Contact admission@tarc.edu.my for KL Campus or your respective branch via https://www.tarc.edu.my/contact-us/.
+        Contact admission@tarc.edu.my for KL Campus or your respective branch via [Contact Us](https://www.tarc.edu.my/contact-us/).
         All appeals are subject to approval.
     - text: |
         In case of late payment, an appeal for late registration must be submitted along with a RM50 fee.
-        Email admission@tarc.edu.my for KL or check branch contacts at https://www.tarc.edu.my/contact-us/.
+        Email admission@tarc.edu.my for KL or check branch contacts at [Contact Us](https://www.tarc.edu.my/contact-us/).
         Approval depends on the university.
 
   utter_ask_financial_help_after_offer:
     - text: |
-        For more information on financial assistance, please refer to the Freshmen Guide under Financial Aid:
-        https://www.tarc.edu.my/files/dsa/D8E16D47-5850-4C87-BAD8-CB2D8A30C9AC.pdf
+        For more information on financial assistance, please refer to the Freshmen Guide under Financial Aid: [Freshmen Guide - Financial Aid](https://www.tarc.edu.my/files/dsa/D8E16D47-5850-4C87-BAD8-CB2D8A30C9AC.pdf)
     - text: |
         You can learn more about financial aid options in the Freshmen Guide available here:
-        https://www.tarc.edu.my/files/dsa/D8E16D47-5850-4C87-BAD8-CB2D8A30C9AC.pdf
+        [Freshmen Guide](https://www.tarc.edu.my/files/dsa/D8E16D47-5850-4C87-BAD8-CB2D8A30C9AC.pdf)
     - text: |
         Detailed information on financial assistance is provided in the Freshmen Guide:
-        https://www.tarc.edu.my/files/dsa/D8E16D47-5850-4C87-BAD8-CB2D8A30C9AC.pdf
+        [Freshmen Guide - Financial Aid](https://www.tarc.edu.my/files/dsa/D8E16D47-5850-4C87-BAD8-CB2D8A30C9AC.pdf)
+    - text: |
+        Detailed information on financial assistance is provided in the Freshmen Guide:
+        [Freshmen Guide - Financial Aid](https://www.tarc.edu.my/files/dsa/D8E16D47-5850-4C87-BAD8-CB2D8A30C9AC.pdf)
     - text: |
         Please refer to the Freshmen Guide for financial aid details at the following link:
-        https://www.tarc.edu.my/files/dsa/D8E16D47-5850-4C87-BAD8-CB2D8A30C9AC.pdf
+        [Freshmen Guide - Financial Aid](https://www.tarc.edu.my/files/dsa/D8E16D47-5850-4C87-BAD8-CB2D8A30C9AC.pdf)
 
 
 
@@ -451,40 +453,40 @@ responses:
 
   utter_ask_after_fee_payment:
   - text: |
-      After paying your fees, log in to http://bit.ly/TARUMTapp and click on 'Information for Freshmen' 
+      After paying your fees, log in to [TAR UMTapp](http://bit.ly/TARUMTapp) and click on 'Information for Freshmen' 
       on the left panel of the Application Status page for further details.
   - text: |
-      Once your payment is confirmed, visit http://bit.ly/TARUMTapp and select 'Information for Freshmen' 
+      Once your payment is confirmed, visit [TAR UMTapp](http://bit.ly/TARUMTapp) and select 'Information for Freshmen' 
       from the Application Status page menu for more information.
   - text: |
-      You are advised to log on to http://bit.ly/TARUMTapp after fee payment and click 'Information for Freshmen' 
+      You are advised to log on to [TAR UMTapp](http://bit.ly/TARUMTapp) after fee payment and click 'Information for Freshmen' 
       on the left panel of your Application Status page to access important information.
   - text: |
-      Following fee payment, please access http://bit.ly/TARUMTapp and navigate to 'Information for Freshmen' 
+      Following fee payment, please access [TAR UMTapp](http://bit.ly/TARUMTapp) and navigate to 'Information for Freshmen' 
       on the Application Status page for guidance and updates.
 
   utter_ask_student_login_info:
     - text: |
-        Please log in to http://bit.ly/TARUMTapp 2–3 working days after paying the fees to access 
+        Please log in to [TAR UMTapp](http://bit.ly/TARUMTapp) 2–3 working days after paying the fees to access 
         your Student Registration Number, Email, Intranet, and E-Learning login details.
     - text: |
-        After 2–3 working days from fee payment, log on to http://bit.ly/TARUMTapp for your Student Registration Number, 
+        After 2–3 working days from fee payment, log on to [TAR UMTapp](http://bit.ly/TARUMTapp) for your Student Registration Number, 
         Email login, Intranet, and E-Learning access.
     - text: |
         Your Student Registration Number and login credentials for Email, Intranet, and E-Learning 
-        can be viewed 2–3 working days after fee payment at http://bit.ly/TARUMTapp.
+        can be viewed 2–3 working days after fee payment at [TAR UMTapp](http://bit.ly/TARUMTapp).
     - text: |
-        Please check http://bit.ly/TARUMTapp 2–3 working days post-payment to retrieve your Student Registration Number and login details for Email, Intranet, and E-Learning.
+        Please check [TAR UMTapp](http://bit.ly/TARUMTapp) 2–3 working days post-payment to retrieve your Student Registration Number and login details for Email, Intranet, and E-Learning.
 
   utter_ask_orientation_timetable:
     - text: |
-        Check your Orientation schedule and timetable just before the programme starts by logging in to the Student Intranet at https://web.tarc.edu.my/portal/login.jsp.
+        Check your Orientation schedule and timetable just before the programme starts by logging in to the Student Intranet at [Student Intranet](https://web.tarc.edu.my/portal/login.jsp).
     - text: |
-        Please visit https://web.tarc.edu.my/portal/login.jsp on the Student Intranet to view your Orientation timetable and class schedule prior to programme commencement.
+        Please visit [Student Intranet](https://web.tarc.edu.my/portal/login.jsp) on the Student Intranet to view your Orientation timetable and class schedule prior to programme commencement.
     - text: |
-        Orientation and class timetables are available on the Student Intranet at https://web.tarc.edu.my/portal/login.jsp, just before the start of your programme.
+        Orientation and class timetables are available on the Student Intranet at [Student Intranet](https://web.tarc.edu.my/portal/login.jsp), just before the start of your programme.
     - text: |
-        Log in to the Student Intranet at https://web.tarc.edu.my/portal/login.jsp shortly before the programme begins to access your Orientation schedule and timetable.
+        Log in to the Student Intranet at [Student Intranet](https://web.tarc.edu.my/portal/login.jsp) shortly before the programme begins to access your Orientation schedule and timetable.
 
   utter_ask_programme_transfer:
     - text: |
@@ -503,14 +505,13 @@ responses:
 
   utter_ask_sibling_discount:
     - text: |
-        For eligibility and details on the TAR UMT Sibling Discount, please visit: https://www.tarc.edu.my/admissions/a/sibling-discount-for-malaysians-only/
+        For eligibility and details on the TAR UMT Sibling Discount, please visit: [TAR UMT Sibling Discount](https://www.tarc.edu.my/admissions/a/sibling-discount-for-malaysians-only/)
     - text: |
-        More information about the Sibling Discount for Malaysian students, including eligibility, can be found at: https://www.tarc.edu.my/admissions/a/sibling-discount-for-malaysians-only/
+        More information about the Sibling Discount for Malaysian students, including eligibility, can be found at: [TAR UMT Sibling Discount](https://www.tarc.edu.my/admissions/a/sibling-discount-for-malaysians-only/)
     - text: |
-        To learn about the TAR UMT Sibling Discount and check eligibility criteria, visit: https://www.tarc.edu.my/admissions/a/sibling-discount-for-malaysians-only/
+        To learn about the TAR UMT Sibling Discount and check eligibility criteria, visit: [TAR UMT Sibling Discount](https://www.tarc.edu.my/admissions/a/sibling-discount-for-malaysians-only/)
     - text: |
-        Please refer to https://www.tarc.edu.my/admissions/a/sibling-discount-for-malaysians-only/ for details and eligibility requirements for the Sibling Discount.
-
+        Please refer to [this page](https://www.tarc.edu.my/admissions/a/sibling-discount-for-malaysians-only/) for details and eligibility requirements for the Sibling Discount.
 # Default Fallback
   utter_ask_fallback:
     - text: "Sorry, I didn’t understand that. Can you rephrase your question?"
