@@ -1,0 +1,419 @@
+version: "3.1"
+
+nlu:
+
+# General Information
+- intent: ask_programmes_offered
+  examples: |
+    - what programmes are offered
+    - what courses does TAR UMT offer
+    - list of programmes available
+    - what can I study at TAR UMT
+    - what can I study here
+    - what courses are there
+    - what courses are available
+    - what programs are available
+
+- intent: ask_intake_dates
+  examples: |
+    - when are the intakes
+    - intake dates for TAR UMT
+    - when can I enroll
+    - what months are intakes available
+    - when is the next intake
+    - when does the programme start
+    - what is the start date for the next semester
+
+- intent: ask_number_of_campuses
+  examples: |
+    - how many campuses are there
+    - number of TAR UMT campuses
+    - where are TAR UMT campuses located
+    - what are the other branches of TAR UMT
+    - how many branches does TAR UMT have
+    - where are the campuses of TAR UMT
+
+- intent: ask_programme_fees
+  examples: |
+    - how much are the fees
+    - programme fee details
+    - cost of studying at TAR UMT
+    - what is the tuition fee for degree
+    - how much do I need to pay for diploma
+    - fee structure for programmes
+    - what are the tuition fees
+
+- intent: ask_semester_info
+  examples: |
+    - how many semesters per year
+    - semester duration and break
+    - academic calendar details
+    - how long is each semester
+    - when are the semester breaks
+    - how many semesters in a year
+    - when does the semester start and end
+    - what is the academic calendar
+
+
+# Application Process
+
+- intent: ask_how_to_apply
+  examples: |
+    - how do I apply
+    - when can I apply
+    - application process
+    - how to register for TAR UMT
+    - how to apply
+    - when does application open
+    - how to submit application
+    - application procedure
+    - how to apply for admission
+    - how to apply for courses
+
+- intent: ask_required_documents
+  examples: |
+    - what documents are needed
+    - documents required for application
+    - what do I need to upload
+    - what are the documents needed for application
+    - what documents do I need to submit
+    - what documents are required for application
+    - what should I submit for application
+    - what documents do I need to provide
+
+- intent: ask_additional_documents
+  examples: |
+    - extra documents for transfer students
+    - documents needed if I studied elsewhere
+    - requirements for graduate applicants
+    - additional documents for international students
+    - extra documents for diploma holders
+    - documents needed if I have work experience
+    - what additional documents do I need to submit
+
+- intent: ask_portfolio_architecture
+  examples: |
+    - architecture programme requirements
+    - do I need portfolio for architecture
+    - interior design interview requirements
+    - architecture application requirements
+    - architecture portfolio needed
+    - interior design portfolio needed
+
+
+- intent: ask_portfolio_design
+  examples: |
+    - graphic design portfolio needed
+    - do I need portfolio for multimedia design
+    - fashion design requirements
+    - fashion design portfolio needed
+    - do I need portfolio for fashion design
+    - multimedia design portfolio needed
+    - do I need portfolio for graphic design
+    - do I need portfolio for design courses
+    - design courses portfolio requirements
+
+- intent: ask_application_fee
+  examples: |
+    - is there application fee
+    - how much is application fee
+    - do I need to pay to apply
+    - application fee details
+    - is there a fee to apply
+    - how much do I need to pay for the course
+    - what is the application fee
+    - 
+
+- intent: ask_application_deadline
+  examples: |
+    - when is application closing date
+    - deadline for application
+    - last date to apply
+    - when does application close
+    - application deadline
+    - when is the last day to apply
+    - when is the application closing date
+
+
+- intent: ask_incomplete_application
+  examples: |
+    - will I be notified if incomplete
+    - what if my application is missing documents
+    - can I submit missing documents later
+    - can I submit trial spm results
+    - what if I don’t have all documents ready
+    - can I submit application without all documents
+
+- intent: ask_application_result
+  examples: |
+    - how to check application result
+    - where can I see my application status
+    - when will I know if I’m accepted
+    - how do I find out if I got accepted
+    - when will the admission results be out
+    - how to check if I got accepted
+    - how to check if I got an offer
+    - when will I know if I got an offer
+    - how to check if I got an offer
+
+- intent: ask_appeal
+  examples: |
+    - can I appeal if rejected
+    - what if my application fails
+    - can I reapply if rejected
+    - what if I don’t get accepted
+    - can I appeal the decision
+    - can I reapply if I don’t get accepted
+    - what if I don’t get an offer
+    - can I appeal if I don’t get an offer
+    - what if I don’t get an offer
+
+
+# Entry Requirements
+- intent: ask_entry_requirements
+  examples: |
+    - entry requirements for programmes
+    - what are minimum requirements
+    - requirements for diploma or degree
+    - what do I need to get in SPM
+    - what are the entry requirements for diploma
+    - what are the entry requirements for degree
+    - what are the entry requirements for foundation
+    - what are the minimum requirements for diploma
+    - what are the minimum requirements for degree
+    - what are the minimum requirements for foundation
+    - what do I need to get in SPM to apply for foundation
+    - what do I need to get in SPM to apply for diploma
+
+
+- intent: ask_for_multiple_spm_sittings
+  examples: |
+    - can I combine SPM results
+    - use two sittings for SPM
+    - multiple exam results allowed
+    - can I use results from different years or sittings
+    - can I combine results from different years or sittings
+
+
+- intent: ask_dpr_english_requirement
+  examples: |
+    - I have SPM 4 credits but only pass in English, can I join DPR?
+    - Can I enroll in Diploma in Public Relations with only a pass in English?
+    - I took a bridging English course and got Grade B, can I join DPR?
+    - Is bridging English accepted instead of SPM English credit for DPR?
+    - Do I need a credit in English to join DPR?
+    - I don't have credit in English but passed bridging course, can I still apply for DPR?
+
+- intent: ask_uec_english_requirement_degree
+  examples: |
+    - I have UEC but no MUET or IELTS, can I join Nutrition degree?
+    - What are English requirements for UEC students applying for Nutrition?
+    - Do I need MUET for Bachelor of Nutrition if I have UEC?
+    - Can I apply for English degree with UEC without IELTS?
+    - What MUET band is required for Nutrition or English degree?
+    - I have UEC qualification but no English test, can I still apply?
+
+- intent: ask_alternative_english_test
+  examples: |
+    - Besides MUET or IELTS, is there another English test I can take?
+    - Are there other English proficiency tests accepted apart from MUET?
+    - Can I use Cambridge Linguaskill for admission?
+    - What is the alternative to IELTS for English requirement?
+    - Is Linguaskill accepted for Nutrition or English degree?
+    - What score do I need for Linguaskill to enter the programme?
+
+- intent: ask_medium_instruction_english_requirement
+  examples: |
+    - My previous study was in English, do I still need MUET or IELTS?
+    - If my programme was taught in English, can I skip MUET?
+    - Do I need English test if my medium of instruction was English?
+    - Can I apply for English with Drama without MUET if I studied in English before?
+    - Is MUET compulsory even if I studied in English?
+    - Do I still need IELTS for English degree if my previous education was in English?
+
+- intent: ask_nutrition_english_exemption
+  examples: |
+    - My foundation was taught in English, do I need MUET for Nutrition?
+    - If my previous programme was in English, can I skip MUET for Nutrition degree?
+    - Do Malaysian students with English medium education need MUET for Nutrition?
+    - Am I exempted from MUET if I studied in English before applying for Nutrition?
+    - Is MUET required if my foundation used English as medium of instruction?
+
+- intent: ask_admission_offer_chances
+  examples: |
+    - If I meet the minimum requirements, will I get the programme?
+    - Will I automatically be accepted if I meet the entry requirements?
+    - How are programme offers decided?
+    - What determines if I get accepted into a programme?
+    - Is meeting minimum requirements enough for admission?
+    - Do I need interview or portfolio to be accepted?
+
+- intent: ask_mqa_accreditation
+  examples: |
+    - Are TAR UMT programmes accredited by MQA?
+    - Is the university accredited by MQA?
+    - Are the courses recognized by MQA?
+    - Is TAR UMT certified by MQA?
+    - Where can I check MQA accreditation?
+
+- intent: ask_apel_admission
+  examples: |
+    - Can I apply without academic qualifications but with work experience?
+    - I have work experience but no formal education, can I study here?
+    - What is APEL and can I use it to apply?
+    - Can I apply using APEL certificate?
+    - Is there a way to enter university based on experience?
+    - How to apply through APEL?
+
+# Scholarships & Financial Aid
+- intent: ask_merit_scholarship
+  examples: |
+    - I got good results, is there any merit scholarship?
+    - How do I apply for merit scholarship?
+    - Is there scholarship for students with excellent results?
+    - Will I automatically get scholarship if my results are good?
+    - What is the merit scholarship and how to apply?
+    - Are high achievers eligible for tuition fee waiver?
+
+- intent: ask_financial_aid
+  examples: |
+    - Are there any scholarships or loans available?
+    - What financial aid options are available for students?
+    - Can I apply for PTPTN or study loan?
+    - Are there grants or financial assistance for students?
+    - Where can I find information about financial aid?
+    - How to contact financial aid unit?
+
+- intent: ask_hostel_application
+  examples: |
+    - How do I apply for hostel?
+    - When can I apply for accommodation?
+    - Is hostel available for students?
+    - How to get student accommodation?
+    - Do I need to be a student before applying for hostel?
+    - Who should I contact for hostel enquiries?
+
+
+# Acceptance & Payment
+- intent: ask_accept_offer
+  examples: |
+    - how to accept offer
+    - accept admission
+    - what to do after getting offer
+
+- intent: ask_reject_offer
+  examples: |
+    - what if I don’t accept offer
+    - do I need to pay if not interested
+
+- intent: ask_late_payment
+  examples: |
+    - missed payment deadline
+    - can I still pay late
+    - late registration
+
+- intent: ask_financial_help_after_offer
+  examples: |
+    - need help paying fees
+    - financial assistance after admission
+
+
+# After Payment
+- intent: ask_after_fee_payment
+  examples: |
+    - What should I do after paying my fees?
+    - What is the next step after fee payment?
+    - I have paid my fees, what do I do next?
+    - Where can I find information for freshmen?
+    - What to do after admission payment?
+
+- intent: ask_student_login_info
+  examples: |
+    - How do I get my student registration number?
+    - Where can I find my login details for intranet?
+    - How to access student intranet?
+    - When will I receive my login information after payment?
+    - How do I check my email and e-learning login?
+
+- intent: ask_orientation_timetable
+  examples: |
+    - Where can I check my timetable?
+    - How do I find my orientation schedule?
+    - Where to see class schedule before semester starts?
+    - How to access timetable on student portal?
+    - When can I check my orientation details?
+
+- intent: ask_programme_transfer
+  examples: |
+    - Can I change my programme after paying fees?
+    - How do I apply for programme transfer?
+    - What is the deadline to change programme?
+    - I want to switch course after registration, is it possible?
+    - When is the last date to apply for transfer?
+
+- intent: ask_sibling_discount
+  examples: |
+    - How can I apply for sibling discount?
+    - I have a sibling studying here, do I get discount?
+    - When should I apply for sibling discount?
+    - What are the requirements for sibling discount?
+    - Is there a discount if my brother or sister studies here?
+
+- intent: ask_fallback
+  examples: |
+    - asdfghjkl
+    - ehgbiwerbgltr
+    - blabla random text
+    - i don't understand anything
+    - what even is this
+    - tarumt
+    - i don't know what to say
+    - tell me something weird
+    - ???
+
+- intent: ask_out_of_scope
+  examples: |
+    - what is the meaning of life
+    - who is the president of the world
+    - can you tell me a joke
+    - what is love
+    - do you like pizza
+    - how to become a millionaire
+    - what is the weather today
+    - can you sing a song
+
+- intent: ask_greet
+  examples: |
+    - hi
+    - hello
+    - hey
+    - good morning
+    - good afternoon
+    - good evening
+
+- intent: ask_goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you later
+    - take care
+    - see you soon
+    - have a nice day
+    - i leave first
+
+- intent: ask_thanks
+  examples: |
+    - thanks
+    - thank you
+    - thank you very much
+    - thanks a lot
+    - thank you so much
+    - i appreciate it
+
+- intent: ask_small_talk
+  examples: |
+    - how you doing
+    - how are you
+    - what's the latest news
+    - any updates
+    - what's happening
