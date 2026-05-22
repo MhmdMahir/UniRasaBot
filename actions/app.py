@@ -1,4 +1,4 @@
-import streamlit as st
+import streamlit as st  # type: ignore[reportMissingImports]
 import requests
 import re
 
