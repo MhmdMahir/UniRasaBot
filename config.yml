@@ -15,7 +15,7 @@ pipeline:
   # Character-level vectors
 - name: CountVectorsFeaturizer
   analyzer: "char_wb"
-  min_ngram: 3
+  min_ngram: 4
   max_ngram: 5
 
 - name: DIETClassifier
@@ -30,8 +30,8 @@ pipeline:
 
   # IMPORTANT
 - name: FallbackClassifier
-  threshold: 0.4
-  ambiguity_threshold: 0.1
+  threshold: 0.7
+  ambiguity_threshold: 0.15
 
 policies:
 - name: MemoizationPolicy
