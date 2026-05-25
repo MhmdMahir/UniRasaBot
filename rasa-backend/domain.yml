@@ -542,8 +542,6 @@ responses:
     - text: "I’m here to help with your TAR UMT admissions questions. What would you like to know?"
     - text: "Feel free to ask me anything about TAR UMT admissions!"
     - text: "I can assist with information on TAR UMT admissions. What do you want to know?"
-actions:
-  - action_get_course_info
 
 session_config:
   session_expiration_time: 60
