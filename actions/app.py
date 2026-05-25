@@ -2,7 +2,7 @@ import streamlit as st  # type: ignore[reportMissingImports]
 import requests
 import re
 
-URL = "http://127.0.0.1:5005/webhooks/rest/webhook"
+URL = "https://mohamedmahir-rasa-backend.hf.space/webhooks/rest/webhook"
 
 # Bad words list
 bad_words = [
