@@ -47,7 +47,7 @@ This project is deployed using:
 
 ---
 
-# 💻 Streamlit Frontend
+# Streamlit Frontend
 
 The chatbot frontend is built using Streamlit and communicates with the Rasa backend through REST API requests.
 
